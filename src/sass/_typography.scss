@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Muli|Droid+Sans+Mono|Acme|Norican|Fredoka+One);
+
+$generalfont: 'Muli', sans-serif;
+$developfont: 'Droid Sans Mono' ;
+$designfont: 'Norican', cursive;
+
+h1 {
+	color:$purple;
+	.developfont
+	{
+	font-family:$developfont;
+	font-size:40px;
+	letter-spacing:8px;
+	}
+	.designfont
+	{
+	font-family:$designfont;
+	font-size:50px;
+	}
+	
+}

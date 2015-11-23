@@ -1,0 +1,73 @@
+.container {
+	width:100vw;
+	margin:0;
+}
+.jumbo {
+	background:#6ef6c4;
+	height:70vh;
+	width:100vw;
+	position:absolute;
+	top:20vh;
+	.developer {
+	position:absolute;
+	right:10%;
+	top:0;
+	font-family:$developfont;
+	font-size:50px;
+	color:white;
+	}
+	.designer {
+	position:absolute;
+	right:10%;
+	bottom:0;
+	font-family:$developfont;
+	font-size:70px;
+	letter-spacing:3px;
+	color:white;
+	font-family:$designfont;
+	}
+	.banner {
+	width:100vw;
+	height:70vh;
+	z-index:-10;
+	}
+}
+	
+@media screen and (min-width:1400px) {
+	.banner {
+		background:url(../img/alexbanner1600w.png) no-repeat center;
+	}
+}
+@media screen and (max-width:1400px) {
+	.banner {
+		background:url(../img/alexbanner1400w.png) no-repeat center;
+	}
+}
+@media screen and (max-width:1200px) {
+	.banner {
+		background:url(../img/alexbanner1200w.png) no-repeat center;
+	}
+}
+@media screen and (max-width:1000px) {
+	.banner {
+		background:url(../img/alexbanner1000w.png) no-repeat center;
+	}
+}
+@media screen and (max-width:850px) {
+	.banner {
+		background:url(../img/alexbanner850w.png) no-repeat center;
+	}
+}
+@media screen and (max-width:700px) {
+	.banner {
+		background:url(../img/alexbanner700w.png) no-repeat center;
+	}
+	h1 {
+		.designfont {
+			font-size:40px;
+		}
+		.developfont {
+			font-size:30px;
+		}
+	}
+}

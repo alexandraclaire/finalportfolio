@@ -1,0 +1,23 @@
+.col-dt-60, .col-dt-40 {
+	display:none;
+}
+.row-dt-30 {
+	height:30vh;
+	margin:0;
+}
+@media screen and (min-width:768px) {
+	.col-dt-60 {
+	width:60vw;
+	margin:0;
+	display:inline-block;
+	}
+	.col-dt-40 {
+	width:40vw;
+	margin:0;
+	display:inline-block;
+	}
+}
+$pink: #faa0c4;
+$blue: #37caef;
+$mint: #79f5d3;
+$purple:#8592f6;

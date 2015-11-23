@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Muli|Droid+Sans+Mono|Acme|Norican|Fredoka+One);
+/* line 1, ../../src/sass/_variables.scss */
+.col-dt-60, .col-dt-40 {
+  display: none;
+}
+
+/* line 4, ../../src/sass/_variables.scss */
+.row-dt-30 {
+  height: 30vh;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 9, ../../src/sass/_variables.scss */
+  .col-dt-60 {
+    width: 60vw;
+    margin: 0;
+    display: inline-block;
+  }
+
+  /* line 14, ../../src/sass/_variables.scss */
+  .col-dt-40 {
+    width: 40vw;
+    margin: 0;
+    display: inline-block;
+  }
+}
+/* line 7, ../../src/sass/_typography.scss */
+h1 {
+  color: #8592f6;
+}
+/* line 9, ../../src/sass/_typography.scss */
+h1 .developfont {
+  font-family: "Droid Sans Mono";
+  font-size: 40px;
+  letter-spacing: 8px;
+}
+/* line 15, ../../src/sass/_typography.scss */
+h1 .designfont {
+  font-family: "Norican", cursive;
+  font-size: 50px;
+}
+
+/* line 1, ../../src/sass/_layout.scss */
+.container {
+  width: 100vw;
+  margin: 0;
+}
+
+/* line 5, ../../src/sass/_layout.scss */
+.jumbo {
+  background: #6ef6c4;
+  height: 70vh;
+  width: 100vw;
+  position: absolute;
+  top: 20vh;
+}
+/* line 11, ../../src/sass/_layout.scss */
+.jumbo .developer {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  font-family: "Droid Sans Mono";
+  font-size: 50px;
+  color: white;
+}
+/* line 19, ../../src/sass/_layout.scss */
+.jumbo .designer {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  font-family: "Droid Sans Mono";
+  font-size: 70px;
+  letter-spacing: 3px;
+  color: white;
+  font-family: "Norican", cursive;
+}
+/* line 29, ../../src/sass/_layout.scss */
+.jumbo .banner {
+  width: 100vw;
+  height: 70vh;
+  z-index: -10;
+}
+
+@media screen and (min-width: 1400px) {
+  /* line 37, ../../src/sass/_layout.scss */
+  .banner {
+    background: url(../img/alexbanner1600w.png) no-repeat center;
+  }
+}
+@media screen and (max-width: 1400px) {
+  /* line 42, ../../src/sass/_layout.scss */
+  .banner {
+    background: url(../img/alexbanner1400w.png) no-repeat center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* line 47, ../../src/sass/_layout.scss */
+  .banner {
+    background: url(../img/alexbanner1200w.png) no-repeat center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* line 52, ../../src/sass/_layout.scss */
+  .banner {
+    background: url(../img/alexbanner1000w.png) no-repeat center;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* line 57, ../../src/sass/_layout.scss */
+  .banner {
+    background: url(../img/alexbanner850w.png) no-repeat center;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 62, ../../src/sass/_layout.scss */
+  .banner {
+    background: url(../img/alexbanner700w.png) no-repeat center;
+  }
+
+  /* line 66, ../../src/sass/_layout.scss */
+  h1 .designfont {
+    font-size: 40px;
+  }
+  /* line 69, ../../src/sass/_layout.scss */
+  h1 .developfont {
+    font-size: 30px;
+  }
+}
+/* line 1, ../../src/sass/_navigation.scss */
+nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+}
+/* line 5, ../../src/sass/_navigation.scss */
+nav .brand {
+  float: left;
+  margin-left: 10vw;
+}
+/* line 9, ../../src/sass/_navigation.scss */
+nav .navigation {
+  position: absolute;
+  right: 0;
+}
+/* line 12, ../../src/sass/_navigation.scss */
+nav .navigation .navlist {
+  font-family: "Muli", sans-serif;
+  color: black;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-end;
+}
+/* line 20, ../../src/sass/_navigation.scss */
+nav .navigation .navlist li {
+  padding: 2em 2.5em;
+  text-align: right;
+}
+/* line 23, ../../src/sass/_navigation.scss */
+nav .navigation .navlist li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* line 29, ../../src/sass/_navigation.scss */
+nav .navigation .navlist li a:hover {
+  color: #faa0c4;
+}
+
+/* line 37, ../../src/sass/_navigation.scss */
+nav ul .subnav ul {
+  display: none;
+  padding-top: 0;
+  margin-right: -3em;
+  z-index: 100;
+}
+
+/* line 43, ../../src/sass/_navigation.scss */
+nav ul .subnav:hover ul {
+  display: block;
+  list-style: none;
+}
+/* line 46, ../../src/sass/_navigation.scss */
+nav ul .subnav:hover ul li {
+  text-align: right;
+  padding-top: 1em;
+  padding-bottom: 0;
+}
+/* line 50, ../../src/sass/_navigation.scss */
+nav ul .subnav:hover ul li a:hover {
+  color: #37caef;
+}
