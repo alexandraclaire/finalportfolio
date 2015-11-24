@@ -6,11 +6,11 @@ body {
 	margin:0;
 }
 .jumbo {
-	background:#6ef6c4;
+	background: $purple;
 	height:60vh;
 	width:100vw;
 	position:absolute;
-	top:20vh;
+	top:25vh;
 	.developer {
 	position:absolute;
 	right:10%;
@@ -40,19 +40,19 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	justify-content:center;
-	margin-top:85vh;
+	margin-top:90vh;
 	padding-bottom:5em;
 	a {
 		color:white;
 		text-decoration:none;
 		font-family:$generalfont;
 		font-weight:bold;
-		background:$pink;
+		background:grey;
 		padding:0.8em 1.5em;
 		font-size:20px;
 	}
 	a:hover {
-		background:#f999c0;
+		background:darkgrey;
 	}	
 	
 }

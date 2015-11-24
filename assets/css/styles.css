@@ -1,28 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Muli|Droid+Sans+Mono|Acme|Norican|Fredoka+One);
-/* line 7, ../../src/sass/_typography.scss */
-h1 {
-  color: #E9266A;
-}
-/* line 9, ../../src/sass/_typography.scss */
+/* line 8, ../../src/sass/_typography.scss */
 h1 a {
-  color: #E9266A;
+  color: #8592f6;
   text-decoration: none;
 }
 
-/* line 14, ../../src/sass/_typography.scss */
+/* line 13, ../../src/sass/_typography.scss */
 .developfont {
   font-family: "Droid Sans Mono";
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 8px;
 }
 
-/* line 20, ../../src/sass/_typography.scss */
+/* line 19, ../../src/sass/_typography.scss */
 .designfont {
   font-family: "Norican", cursive;
-  font-size: 50px;
+  font-size: 40px;
 }
 
-/* line 26, ../../src/sass/_typography.scss */
+/* line 25, ../../src/sass/_typography.scss */
 .subtitle {
   font-family: "Droid Sans Mono";
 }
@@ -40,11 +36,11 @@ body {
 
 /* line 8, ../../src/sass/_layout.scss */
 .jumbo {
-  background: #6ef6c4;
+  background: #8592f6;
   height: 60vh;
   width: 100vw;
   position: absolute;
-  top: 20vh;
+  top: 25vh;
 }
 /* line 14, ../../src/sass/_layout.scss */
 .jumbo .developer {
@@ -79,7 +75,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
-  margin-top: 85vh;
+  margin-top: 90vh;
   padding-bottom: 5em;
 }
 /* line 45, ../../src/sass/_layout.scss */
@@ -88,13 +84,13 @@ body {
   text-decoration: none;
   font-family: "Muli", sans-serif;
   font-weight: bold;
-  background: #E9266A;
+  background: grey;
   padding: 0.8em 1.5em;
   font-size: 20px;
 }
 /* line 54, ../../src/sass/_layout.scss */
 .button a:hover {
-  background: #f999c0;
+  background: darkgrey;
 }
 
 /* line 59, ../../src/sass/_layout.scss */
@@ -154,18 +150,19 @@ nav {
   width: 100vw;
   position: fixed;
   top: 0;
+  background: white;
 }
-/* line 5, ../../src/sass/_navigation.scss */
+/* line 6, ../../src/sass/_navigation.scss */
 nav .brand {
   float: left;
   margin-left: 3em;
 }
-/* line 9, ../../src/sass/_navigation.scss */
+/* line 11, ../../src/sass/_navigation.scss */
 nav .navigation {
   position: absolute;
   right: 0;
 }
-/* line 12, ../../src/sass/_navigation.scss */
+/* line 14, ../../src/sass/_navigation.scss */
 nav .navigation .navlist {
   font-family: "Muli", sans-serif;
   color: black;
@@ -175,24 +172,24 @@ nav .navigation .navlist {
   display: flex;
   justify-content: flex-end;
 }
-/* line 20, ../../src/sass/_navigation.scss */
+/* line 22, ../../src/sass/_navigation.scss */
 nav .navigation .navlist li {
-  padding: 2em 2.5em;
+  padding: 1.8em 2.5em;
   text-align: right;
 }
-/* line 23, ../../src/sass/_navigation.scss */
+/* line 25, ../../src/sass/_navigation.scss */
 nav .navigation .navlist li a {
   color: black;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
 }
-/* line 29, ../../src/sass/_navigation.scss */
+/* line 31, ../../src/sass/_navigation.scss */
 nav .navigation .navlist li a:hover {
-  color: #E9266A;
+  color: #8592f6;
 }
 
-/* line 37, ../../src/sass/_navigation.scss */
+/* line 39, ../../src/sass/_navigation.scss */
 nav ul .subnav ul {
   display: none;
   padding-top: 0;
@@ -200,20 +197,20 @@ nav ul .subnav ul {
   z-index: 100;
 }
 
-/* line 43, ../../src/sass/_navigation.scss */
+/* line 45, ../../src/sass/_navigation.scss */
 nav ul .subnav:hover ul {
   display: block;
   list-style: none;
 }
-/* line 46, ../../src/sass/_navigation.scss */
+/* line 48, ../../src/sass/_navigation.scss */
 nav ul .subnav:hover ul li {
   text-align: right;
   padding-top: 1em;
   padding-bottom: 0;
 }
-/* line 50, ../../src/sass/_navigation.scss */
+/* line 52, ../../src/sass/_navigation.scss */
 nav ul .subnav:hover ul li a:hover {
-  color: #E9266A;
+  color: #8592f6;
 }
 
 /* line 1, ../../src/sass/_portfoliopages.scss */
@@ -221,123 +218,111 @@ nav ul .subnav:hover ul li a:hover {
   margin: 0;
   margin-top: 25vh;
   width: 100vw;
+  background: grey;
 }
-/* line 5, ../../src/sass/_portfoliopages.scss */
+/* line 6, ../../src/sass/_portfoliopages.scss */
 #developer h2 {
-  margin-left: 2em;
-  color: #30fac3;
+  color: #8592f6;
 }
 /* line 9, ../../src/sass/_portfoliopages.scss */
 #developer ul {
   font-family: "Muli", sans-serif;
   font-size: 18px;
   margin-left: -2em;
-  margin-top: 3em;
+  margin-top: 1em;
+  color: white;
 }
-/* line 14, ../../src/sass/_portfoliopages.scss */
+/* line 15, ../../src/sass/_portfoliopages.scss */
 #developer ul li {
   list-style: none;
   padding-top: 1em;
 }
-/* line 17, ../../src/sass/_portfoliopages.scss */
+/* line 18, ../../src/sass/_portfoliopages.scss */
 #developer ul li span {
   margin-right: 10px;
 }
 
-/* line 23, ../../src/sass/_portfoliopages.scss */
+/* line 24, ../../src/sass/_portfoliopages.scss */
 #portfolioparts {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: space-between;
-  width: 88%;
-  margin: 0 auto;
 }
-/* line 30, ../../src/sass/_portfoliopages.scss */
+/* line 29, ../../src/sass/_portfoliopages.scss */
 #portfolioparts .subtitle {
   padding-bottom: 2em;
   font-size: 25px;
 }
-/* line 34, ../../src/sass/_portfoliopages.scss */
+/* line 33, ../../src/sass/_portfoliopages.scss */
+#portfolioparts #skills {
+  padding-left: 2em;
+}
+/* line 36, ../../src/sass/_portfoliopages.scss */
+#portfolioparts #skills h3 {
+  color: white;
+}
+/* line 40, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  background: black;
 }
-/* line 38, ../../src/sass/_portfoliopages.scss */
+/* line 44, ../../src/sass/_portfoliopages.scss */
+#portfolioparts #projects h3 {
+  color: white;
+}
+/* line 47, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects #project1 {
-  background: rgba(193, 189, 191, 0.5);
+  background: rgba(255, 255, 255, 0.55);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 1em;
-  width: 40%;
 }
-/* line 45, ../../src/sass/_portfoliopages.scss */
+/* line 52, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects #project1 p {
   font-family: "Muli", sans-serif;
-  margin-left: 2em;
   width: 50%;
 }
-/* line 50, ../../src/sass/_portfoliopages.scss */
+/* line 56, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects #project1 img {
-  height: 170px;
+  height: 180px;
   padding-top: 1em;
   padding-right: 2em;
 }
-/* line 55, ../../src/sass/_portfoliopages.scss */
+/* line 61, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects #project1 h3 {
   font-family: "Droid Sans Mono";
   font-size: 30px;
   color: white;
-  margin-left: 1em;
 }
-/* line 62, ../../src/sass/_portfoliopages.scss */
+/* line 67, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects #project2 {
-  background: rgba(193, 189, 191, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 1em;
-  width: 40%;
 }
-/* line 69, ../../src/sass/_portfoliopages.scss */
+/* line 72, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects #project2 h3 {
   font-family: "Droid Sans Mono";
   font-size: 30px;
   color: white;
 }
-/* line 74, ../../src/sass/_portfoliopages.scss */
+/* line 77, ../../src/sass/_portfoliopages.scss */
 #portfolioparts #projects #project2 img {
-  height: 180px;
-  padding-top: 1em;
-  padding-right: 2em;
-}
-/* line 80, ../../src/sass/_portfoliopages.scss */
-#portfolioparts #projects #project3 {
-  background: rgba(193, 189, 191, 0.5);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 1em;
-  width: 60%;
-}
-/* line 87, ../../src/sass/_portfoliopages.scss */
-#portfolioparts #projects #project3 h3 {
-  font-family: "Droid Sans Mono";
-  font-size: 30px;
-  color: white;
-}
-/* line 92, ../../src/sass/_portfoliopages.scss */
-#portfolioparts #projects #project3 img {
   height: 180px;
   padding-top: 1em;
   padding-right: 2em;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 103, ../../src/sass/_portfoliopages.scss */
-  #projects {
-    width: 50vw;
+  /* line 88, ../../src/sass/_portfoliopages.scss */
+  #portfolioparts #projects {
+    width: 60vw;
+  }
+  /* line 90, ../../src/sass/_portfoliopages.scss */
+  #portfolioparts #projects #project1, #portfolioparts #projects #project2 {
+    height: 40vh;
   }
 }
