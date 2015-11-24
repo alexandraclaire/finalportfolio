@@ -1,10 +1,13 @@
+body {
+	margin:0;
+}
 .container {
 	width:100vw;
 	margin:0;
 }
 .jumbo {
 	background:#6ef6c4;
-	height:70vh;
+	height:60vh;
 	width:100vw;
 	position:absolute;
 	top:20vh;
@@ -28,11 +31,36 @@
 	}
 	.banner {
 	width:100vw;
-	height:70vh;
+	height:60vh;
 	z-index:-10;
 	}
 }
+.button {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content:center;
+	margin-top:85vh;
+	padding-bottom:5em;
+	a {
+		color:white;
+		text-decoration:none;
+		font-family:$generalfont;
+		font-weight:bold;
+		background:$pink;
+		padding:0.8em 1.5em;
+		font-size:20px;
+	}
+	a:hover {
+		background:#f999c0;
+	}	
 	
+}
+footer {
+	font-family:$generalfont;
+	width:100vw;
+	text-align:center;
+}	
 @media screen and (min-width:1400px) {
 	.banner {
 		background:url(../img/alexbanner1600w.png) no-repeat center;

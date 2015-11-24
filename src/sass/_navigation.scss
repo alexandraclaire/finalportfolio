@@ -4,7 +4,7 @@ nav {
 	top:0;
 	.brand {
 		float:left;
-		margin-left:10vw;
+		margin-left:3em;
 	}
 	.navigation {
 		position:absolute;
@@ -48,7 +48,7 @@ nav ul .subnav:hover ul{
 		padding-top:1em;
 		padding-bottom:0;
 		a:hover {
-			color:$blue;
+			color:$pink;
 		}
 	}
 }	

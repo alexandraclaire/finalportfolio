@@ -5,7 +5,12 @@ $developfont: 'Droid Sans Mono' ;
 $designfont: 'Norican', cursive;
 
 h1 {
-	color:$purple;
+	color:$pink;
+	a {
+		color:$pink;
+		text-decoration:none;
+	}
+}
 	.developfont
 	{
 	font-family:$developfont;
@@ -18,4 +23,6 @@ h1 {
 	font-size:50px;
 	}
 	
-}
+.subtitle {
+	font-family:$developfont;
+}	
