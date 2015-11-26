@@ -3,10 +3,14 @@ nav {
 	position:fixed;
 	top:0;
 	background:white;
+	height:90px;
 	.brand {
-		float:left;
-		margin-left:3em;
-
+		position:absolute;
+		left:3em;
+		padding-bottom:1em;
+	}
+	.brand:hover {
+		color:orange;
 	}
 	.navigation {
 		position:absolute;
@@ -20,12 +24,12 @@ nav {
 			display: flex;
 			justify-content:flex-end;
 			li {
-				padding:1.8em 2.5em;
+				padding:1em 2.5em;
 				text-align:right;
 				a {
 					color:black;
 					text-decoration:none;
-					font-size:23px;
+					font-size:20px;
 					font-weight:bold;
 				}
 				a:hover {
@@ -34,23 +38,4 @@ nav {
 		}
 	}
 }
-}
-
-nav ul .subnav ul {
-	display: none;
-	padding-top:0;
-	margin-right:-3em;
-	z-index:100;
-}
-nav ul .subnav:hover ul{
-	display: block;
-	list-style:none;
-	li {
-		text-align:right;
-		padding-top:1em;
-		padding-bottom:0;
-		a:hover {
-			color:$purple;
-		}
-	}
 }

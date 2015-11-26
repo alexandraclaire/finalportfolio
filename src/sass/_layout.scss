@@ -6,96 +6,39 @@ body {
 	margin:0;
 }
 .jumbo {
-	background: $purple;
-	height:60vh;
+	background:$purple url(../img/alexbanner.png) no-repeat 50% 60% fixed;
 	width:100vw;
-	position:absolute;
-	top:25vh;
+	height:80vh;
+	margin-top:8vh;
 	.developer {
 	position:absolute;
 	right:10%;
-	top:0;
+	top:20%;
 	font-family:$developfont;
 	font-size:50px;
 	color:white;
+	text-decoration:none;
+	}
+	.developer:hover { 
+		color:orange;
 	}
 	.designer {
 	position:absolute;
 	right:10%;
-	bottom:0;
-	font-family:$developfont;
+	bottom:20%;
 	font-size:70px;
 	letter-spacing:3px;
 	color:white;
 	font-family:$designfont;
+	text-decoration:none;
 	}
-	.banner {
-	width:100vw;
-	height:60vh;
-	z-index:-10;
+	.designer:hover { 
+		color:orange;
 	}
-}
-.button {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	justify-content:center;
-	margin-top:90vh;
-	padding-bottom:5em;
-	a {
-		color:white;
-		text-decoration:none;
-		font-family:$generalfont;
-		font-weight:bold;
-		background:grey;
-		padding:0.8em 1.5em;
-		font-size:20px;
-	}
-	a:hover {
-		background:darkgrey;
-	}	
-	
 }
 footer {
 	font-family:$generalfont;
 	width:100vw;
 	text-align:center;
+
 }	
-@media screen and (min-width:1400px) {
-	.banner {
-		background:url(../img/alexbanner1600w.png) no-repeat center;
-	}
-}
-@media screen and (max-width:1400px) {
-	.banner {
-		background:url(../img/alexbanner1400w.png) no-repeat center;
-	}
-}
-@media screen and (max-width:1200px) {
-	.banner {
-		background:url(../img/alexbanner1200w.png) no-repeat center;
-	}
-}
-@media screen and (max-width:1000px) {
-	.banner {
-		background:url(../img/alexbanner1000w.png) no-repeat center;
-	}
-}
-@media screen and (max-width:850px) {
-	.banner {
-		background:url(../img/alexbanner850w.png) no-repeat center;
-	}
-}
-@media screen and (max-width:700px) {
-	.banner {
-		background:url(../img/alexbanner700w.png) no-repeat center;
-	}
-	h1 {
-		.designfont {
-			font-size:40px;
-		}
-		.developfont {
-			font-size:30px;
-		}
-	}
-}

@@ -1,95 +1,244 @@
-#developer {
-	margin:0;
-	margin-top:25vh;
-	width:100vw;
-	background:grey;
+#workhome {
+	background:$purple;
+	padding-top:10vh;
+	height:80vh;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	text-align:center;
 	h2 {
-		color:$purple;
-	}
-	ul {
-		font-family:$generalfont;
-		font-size:18px;
-		margin-left:-2em;
-		margin-top:1em;
 		color:white;
-		li {
-			list-style:none;
-			padding-top:1em;
-			span {
-				margin-right:10px;
+		font-size:70px;
+		font-family:$generalfont;
+	}
+	a {
+		color:white;
+		text-decoration:none;
+		border:white 2px solid;
+		padding:0.8em 1em;
+		font-family:$generalfont;
+		margin-left:0.5em;
+	}
+	a:hover {
+		color:$purple;
+		background:white;
+	}
+}
+//DEVELOPER SECTION
+#developer {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:stretch;
+	padding-top:10em;
+	#skills {
+	background:url(../img/codeface.png) no-repeat bottom right;
+	width:100%;
+		h2 {
+			color:$purple;
+			font-family:$developfont;
+			font-size:65px;
+		}
+		h3 {
+			margin-top:3em;
+			font-size:30px;
+		}
+		ul { 
+
+			li {
+				list-style:none;
+				font-family:$generalfont;
+				line-height:40px;
+				font-size:20px;
+				span {
+					margin-right:10px;
+				}
+			}
+		}
+	}
+	#projects {
+		height:75vh;
+		width:100%;
+		h3 {
+			font-family:$developfont;
+		}
+		#project1 {
+			background:grey url(../img/shoppe.png) no-repeat center bottom;
+			background-size:cover;
+			height:50%;
+			h3 {
+				color:$purple;
+				font-size:30px;
+				text-align:right;
+				padding-top:1em;
+				font-family:helvetica;
+				font-weight:bold;
+				text-shadow:2px 2px 2px white;
+				margin:0;
 			}
 		}
 	}
 }
-#portfolioparts {
+
+@media screen and (min-width:800px) {
+	#developer {
+		#skills {
+			width:50%;
+		}
+		#projects {
+			width:50%;
+			#project1, #project2 {
+				height:50%;			}
+		}
+	}
+}
+@media screen and (min-width:1200px) {
+	#developer {
+		#skills {
+			background:url(../img/codeface5.png)  no-repeat bottom right;
+		}
+	}
+}
+@media screen and (min-width:1300px) {
+	#developer {
+		#skills {
+			background:url(../img/codeface4.png) no-repeat bottom right;
+		}
+	}
+}
+@media screen and (min-width:1500px) {
+	#developer {
+		#skills {
+			background:url(../img/codeface2.png)  no-repeat bottom right;
+		}
+	}
+}
+@media screen and (min-width:1600px) {
+	#developer {
+		#skills {
+			background:url(../img/codeface3.png)  no-repeat bottom right;
+		}
+	}
+}
+//DESIGN SECTION
+
+#designer {
 	display:flex;
 	flex-wrap:wrap;
-	align-content:flex-start;
-	justify-content:space-between;
-	.subtitle {
-		padding-bottom:2em;
-		font-size:25px;
-	}
+	justify-content:space-around;
+	margin-top:10em;
+	align-items:stretch;
 	#skills {
-		padding-left:2em;
-
+	width:100%;
+	background:url(../img/designface1.png) no-repeat center center;
+	background-size:cover;
+		h2 {
+			color:$purple;
+			font-family:$designfont;
+			font-size:80px;
+			text-align:right;
+		}
 		h3 {
-		color:white;
+			margin-top:3em;
+			font-size:30px;
+			text-align:right;
+		}
+		ul { 
+
+			li {
+				list-style:none;
+				font-family:$generalfont;
+				line-height:40px;
+				font-size:20px;
+				text-align:right;
+				span {
+					margin-left:10px;
+				}
+			}
 		}
 	}
 	#projects {
-	display:flex;
-	flex-direction:column;
-	background:black;
-	h3 {
-	color:white;
-	}
-	#project1 {
-	background:rgba(255,255,255, 0.55);
-	display:flex;
-	justify-content:space-between;
-	flex-wrap:wrap;
-	p {
-		font-family:$generalfont;
-		width:50%;
-	}
-	img {
-		height:180px;
-		padding-top:1em;
-		padding-right:2em;
-	}
-	h3 {
-		font-family:$developfont;
-		font-size:30px;
-		color:white;
-	}	
-}
-#project2 {
-	background:rgba(255,255,255, 0.6);
-	display:flex;
-	justify-content:space-between;
-	flex-wrap:wrap;
+		width:100%;
 		h3 {
-		font-family:$developfont;
-		font-size:30px;
-		color:white;
-	}
-	img {
-		height:180px;
-		padding-top:1em;
-		padding-right:2em;
-	}	
-}
-}
-}
-
-@media screen and (min-width:960px) {
-#portfolioparts {
-	#projects {
-		width:60vw;
-		#project1, #project2{
-		height:40vh;
+			font-family:$designfont;
+			margin:0;
+		}
+		#project1 {
+			background:pink;
+			h3 {
+				color:$purple;
+				font-size:30px;
+				text-align:right;
+				padding-top:1em;
+				font-family:helvetica;
+				font-weight:bold;
+				text-shadow:2px 2px 2px white;
+			}
+		}	
+		#project2 {
+			background:pink;
 		}
 	}
+}
+@media screen and (min-width:700px) {
+	#designer {
+		#skills {
+			background:url(../img/designface800.png) no-repeat top left;
+			background-size:cover;
+		}
+	}
+		
+	}
+@media screen and (min-width:800px) {
+#designer {
+		#skills {
+			width:50%;
+			order:2;
+			background:url(../img/designface.png) no-repeat top left;
+			background-size:cover;
+		}
+		#projects {
+			width:50%;
+			order:1;
+			#project1, #project2 {
+				height:50%;	
+				margin:0;
+				padding:0;		}
+		}
+		footer {
+			order:3;
+		}
+	}
+}
+@media screen and (min-width:1200px) {
+	#designer {
+		#skills {
+			background:url(../img/designface5.png)  no-repeat top left;
+			background-size:cover;
+		}
+	}
+}
+@media screen and (min-width:1300px) {
+	#designer{
+		#skills {
+			background:url(../img/designface4.png) no-repeat top left;
+			background-size:cover;
+		}
+	}
+}
+@media screen and (min-width:1500px) {
+	#designer {
+		#skills {
+			background:url(../img/designface2.png)  no-repeat top left;
+			background-size:cover;
+		}
+	}
+}
+@media screen and (min-width:1600px) {
+	#designer {
+		#skills {
+			background:url(../img/designface3.png)  no-repeat  top left;
+			background-size:cover;
+		}
 	}
 }
