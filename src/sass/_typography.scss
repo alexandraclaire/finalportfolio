@@ -5,12 +5,17 @@ $developfont: 'Droid Sans Mono', serif;
 $designfont: 'Norican', cursive;
 
 h1 {
+	font-family:$generalfont;
+	text-align:left;
 	a {
 		text-decoration:none;
 		color:black;
 	}
 	a:hover {
 		color:orange;
+	}
+	.top {
+		
 	}
 }
 	.developfont

@@ -6,39 +6,113 @@ body {
 	margin:0;
 }
 .jumbo {
-	background:$purple url(../img/alexbanner.png) no-repeat 50% 60% fixed;
+	background:$purple url(../img/alexbanner.png) no-repeat 50% 100%;
 	width:100vw;
 	height:80vh;
 	margin-top:8vh;
-	.developer {
-	position:absolute;
-	right:10%;
-	top:20%;
-	font-family:$developfont;
-	font-size:50px;
-	color:white;
-	text-decoration:none;
-	}
-	.developer:hover { 
-		color:orange;
-	}
-	.designer {
-	position:absolute;
-	right:10%;
-	bottom:20%;
-	font-size:70px;
-	letter-spacing:3px;
-	color:white;
-	font-family:$designfont;
-	text-decoration:none;
-	}
-	.designer:hover { 
-		color:orange;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-end;
+	align-items:stretch;
+	.roles {
+		display:flex;
+		justify-content:space-between;
+		flex-direction:column;
+		padding-top:5vh;
+		padding-bottom:2em;
+			.developer {
+			font-family:$developfont;
+			font-size:50px;
+			color:white;
+			text-decoration:none;
+			}
+			.developer:hover { 
+				color:orange;
+			}
+			.designer {
+				font-size:70px;
+			letter-spacing:3px;
+			color:white;
+			font-family:$designfont;
+			text-decoration:none;
+			}
+			.designer:hover { 
+				color:orange;
+			}
 	}
 }
 footer {
 	font-family:$generalfont;
 	width:100vw;
 	text-align:center;
-
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	a {
+		color:orange;
+		text-decoration:none;
+	}
+	.phone {
+		color:orange;
+	}
+}	
+.about, .contact {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	width:100vw;
+	align-items:stretch;
+	height:75vh;
+	margin-top:16vh;
+	.left {
+		font-family:$generalfont;
+		margin-bottom:2em;
+		h2 {
+			font-size:40px;
+			width:80%;
+			margin:0 auto;
+			color:$purple;
+			padding-bottom:1em;
+		}
+		p {
+			width:80%;
+			margin:0 auto;
+			padding-top:2em;
+			line-height:30px;
+			font-size:20px;
+		}
+	}
+	.right {
+		font-family:$generalfont;
+		h2 {
+			font-size:40px;
+			margin:0 auto;
+			color:$purple;
+			padding-bottom:1em;
+			padding-right:15vw;
+		}
+		.hobbies1, .hobbies2, .hobbies3 {
+			height:500px;
+			width:100vw;
+			background:pink;
+		}
+	}
+}
+@media screen and (min-width:768px) {
+	.about {
+		.left {
+			width:50%;
+		}
+		.right {
+			width:50%;
+			.hobbies1, .hobbies2, .hobbies3 {
+				height:25vh;
+			}
+		}
+	}	
+}
+@media screen and (min-width:900px) {
+	.roles {
+		padding-right:25vw;
+	}
 }	

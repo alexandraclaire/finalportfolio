@@ -1,28 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Muli|Droid+Sans+Mono|Acme|Norican|Fredoka+One);
-/* line 8, ../../src/sass/_typography.scss */
+/* line 7, ../../src/sass/_typography.scss */
+h1 {
+  font-family: "Muli", sans-serif;
+  text-align: left;
+}
+/* line 10, ../../src/sass/_typography.scss */
 h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 12, ../../src/sass/_typography.scss */
+/* line 14, ../../src/sass/_typography.scss */
 h1 a:hover {
   color: orange;
 }
 
-/* line 16, ../../src/sass/_typography.scss */
+/* line 21, ../../src/sass/_typography.scss */
 .developfont {
   font-family: "Droid Sans Mono", serif;
   font-size: 20px;
   letter-spacing: 8px;
 }
 
-/* line 22, ../../src/sass/_typography.scss */
+/* line 27, ../../src/sass/_typography.scss */
 .designfont {
   font-family: "Norican", cursive;
   font-size: 25px;
 }
 
-/* line 28, ../../src/sass/_typography.scss */
+/* line 33, ../../src/sass/_typography.scss */
 .subtitle {
   font-family: "Droid Sans Mono", serif;
 }
@@ -40,48 +45,136 @@ body {
 
 /* line 8, ../../src/sass/_layout.scss */
 .jumbo {
-  background: #8592f6 url(../img/alexbanner.png) no-repeat 50% 60% fixed;
+  background: #8592f6 url(../img/alexbanner.png) no-repeat 50% 100%;
   width: 100vw;
   height: 80vh;
   margin-top: 8vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
 }
-/* line 13, ../../src/sass/_layout.scss */
-.jumbo .developer {
-  position: absolute;
-  right: 10%;
-  top: 20%;
+/* line 17, ../../src/sass/_layout.scss */
+.jumbo .roles {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 5vh;
+  padding-bottom: 2em;
+}
+/* line 23, ../../src/sass/_layout.scss */
+.jumbo .roles .developer {
   font-family: "Droid Sans Mono", serif;
   font-size: 50px;
   color: white;
   text-decoration: none;
 }
-/* line 22, ../../src/sass/_layout.scss */
-.jumbo .developer:hover {
+/* line 29, ../../src/sass/_layout.scss */
+.jumbo .roles .developer:hover {
   color: orange;
 }
-/* line 25, ../../src/sass/_layout.scss */
-.jumbo .designer {
-  position: absolute;
-  right: 10%;
-  bottom: 20%;
+/* line 32, ../../src/sass/_layout.scss */
+.jumbo .roles .designer {
   font-size: 70px;
   letter-spacing: 3px;
   color: white;
   font-family: "Norican", cursive;
   text-decoration: none;
 }
-/* line 35, ../../src/sass/_layout.scss */
-.jumbo .designer:hover {
+/* line 39, ../../src/sass/_layout.scss */
+.jumbo .roles .designer:hover {
   color: orange;
 }
 
-/* line 39, ../../src/sass/_layout.scss */
+/* line 44, ../../src/sass/_layout.scss */
 footer {
   font-family: "Muli", sans-serif;
   width: 100vw;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 51, ../../src/sass/_layout.scss */
+footer a {
+  color: orange;
+  text-decoration: none;
+}
+/* line 55, ../../src/sass/_layout.scss */
+footer .phone {
+  color: orange;
 }
 
+/* line 59, ../../src/sass/_layout.scss */
+.about, .contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  align-items: stretch;
+  height: 75vh;
+  margin-top: 16vh;
+}
+/* line 67, ../../src/sass/_layout.scss */
+.about .left, .contact .left {
+  font-family: "Muli", sans-serif;
+  margin-bottom: 2em;
+}
+/* line 70, ../../src/sass/_layout.scss */
+.about .left h2, .contact .left h2 {
+  font-size: 40px;
+  width: 80%;
+  margin: 0 auto;
+  color: #8592f6;
+  padding-bottom: 1em;
+}
+/* line 77, ../../src/sass/_layout.scss */
+.about .left p, .contact .left p {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2em;
+  line-height: 30px;
+  font-size: 20px;
+}
+/* line 85, ../../src/sass/_layout.scss */
+.about .right, .contact .right {
+  font-family: "Muli", sans-serif;
+}
+/* line 87, ../../src/sass/_layout.scss */
+.about .right h2, .contact .right h2 {
+  font-size: 40px;
+  margin: 0 auto;
+  color: #8592f6;
+  padding-bottom: 1em;
+  padding-right: 15vw;
+}
+/* line 94, ../../src/sass/_layout.scss */
+.about .right .hobbies1, .about .right .hobbies2, .about .right .hobbies3, .contact .right .hobbies1, .contact .right .hobbies2, .contact .right .hobbies3 {
+  height: 500px;
+  width: 100vw;
+  background: pink;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 103, ../../src/sass/_layout.scss */
+  .about .left {
+    width: 50%;
+  }
+  /* line 106, ../../src/sass/_layout.scss */
+  .about .right {
+    width: 50%;
+  }
+  /* line 108, ../../src/sass/_layout.scss */
+  .about .right .hobbies1, .about .right .hobbies2, .about .right .hobbies3 {
+    height: 25vh;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 115, ../../src/sass/_layout.scss */
+  .roles {
+    padding-right: 25vw;
+  }
+}
 /* line 1, ../../src/sass/_navigation.scss */
 nav {
   width: 100vw;
@@ -129,7 +222,7 @@ nav .navigation .navlist li a {
 }
 /* line 35, ../../src/sass/_navigation.scss */
 nav .navigation .navlist li a:hover {
-  color: #8592f6;
+  color: orange;
 }
 
 /* line 1, ../../src/sass/_portfoliopages.scss */
@@ -181,39 +274,45 @@ nav .navigation .navlist li a:hover {
   color: #8592f6;
   font-family: "Droid Sans Mono", serif;
   font-size: 65px;
+  padding-left: 5%;
 }
-/* line 42, ../../src/sass/_portfoliopages.scss */
+/* line 43, ../../src/sass/_portfoliopages.scss */
 #developer #skills h3 {
   margin-top: 3em;
   font-size: 30px;
+  padding-left: 5%;
 }
 /* line 48, ../../src/sass/_portfoliopages.scss */
+#developer #skills ul {
+  padding-left: 5%;
+}
+/* line 50, ../../src/sass/_portfoliopages.scss */
 #developer #skills ul li {
   list-style: none;
   font-family: "Muli", sans-serif;
   line-height: 40px;
   font-size: 20px;
 }
-/* line 53, ../../src/sass/_portfoliopages.scss */
+/* line 55, ../../src/sass/_portfoliopages.scss */
 #developer #skills ul li span {
   margin-right: 10px;
 }
-/* line 59, ../../src/sass/_portfoliopages.scss */
+/* line 61, ../../src/sass/_portfoliopages.scss */
 #developer #projects {
   height: 75vh;
   width: 100%;
 }
-/* line 62, ../../src/sass/_portfoliopages.scss */
+/* line 64, ../../src/sass/_portfoliopages.scss */
 #developer #projects h3 {
   font-family: "Droid Sans Mono", serif;
 }
-/* line 65, ../../src/sass/_portfoliopages.scss */
+/* line 67, ../../src/sass/_portfoliopages.scss */
 #developer #projects #project1 {
   background: grey url(../img/shoppe.png) no-repeat center bottom;
   background-size: cover;
   height: 50%;
 }
-/* line 69, ../../src/sass/_portfoliopages.scss */
+/* line 71, ../../src/sass/_portfoliopages.scss */
 #developer #projects #project1 h3 {
   color: #8592f6;
   font-size: 30px;
@@ -226,44 +325,54 @@ nav .navigation .navlist li a:hover {
 }
 
 @media screen and (min-width: 800px) {
-  /* line 85, ../../src/sass/_portfoliopages.scss */
+  /* line 87, ../../src/sass/_portfoliopages.scss */
   #developer #skills {
     width: 50%;
   }
-  /* line 88, ../../src/sass/_portfoliopages.scss */
+  /* line 90, ../../src/sass/_portfoliopages.scss */
   #developer #projects {
     width: 50%;
   }
-  /* line 90, ../../src/sass/_portfoliopages.scss */
+  /* line 92, ../../src/sass/_portfoliopages.scss */
   #developer #projects #project1, #developer #projects #project2 {
     height: 50%;
   }
 }
+@media screen and (min-width: 900px) {
+  /* line 100, ../../src/sass/_portfoliopages.scss */
+  #developer #skills ul, #developer #skills h3 {
+    padding-left: 10vw;
+  }
+  /* line 103, ../../src/sass/_portfoliopages.scss */
+  #developer #skills h2 {
+    padding-left: 10vw;
+  }
+}
 @media screen and (min-width: 1200px) {
-  /* line 97, ../../src/sass/_portfoliopages.scss */
+  /* line 112, ../../src/sass/_portfoliopages.scss */
   #developer #skills {
     background: url(../img/codeface5.png) no-repeat bottom right;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 104, ../../src/sass/_portfoliopages.scss */
+  /* line 119, ../../src/sass/_portfoliopages.scss */
   #developer #skills {
     background: url(../img/codeface4.png) no-repeat bottom right;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 111, ../../src/sass/_portfoliopages.scss */
+  /* line 126, ../../src/sass/_portfoliopages.scss */
   #developer #skills {
     background: url(../img/codeface2.png) no-repeat bottom right;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 118, ../../src/sass/_portfoliopages.scss */
+  /* line 133, ../../src/sass/_portfoliopages.scss */
   #developer #skills {
     background: url(../img/codeface3.png) no-repeat bottom right;
   }
 }
-/* line 125, ../../src/sass/_portfoliopages.scss */
+/* line 140, ../../src/sass/_portfoliopages.scss */
 #designer {
   display: flex;
   flex-wrap: wrap;
@@ -271,26 +380,32 @@ nav .navigation .navlist li a:hover {
   margin-top: 10em;
   align-items: stretch;
 }
-/* line 131, ../../src/sass/_portfoliopages.scss */
+/* line 146, ../../src/sass/_portfoliopages.scss */
 #designer #skills {
   width: 100%;
   background: url(../img/designface1.png) no-repeat center center;
   background-size: cover;
 }
-/* line 135, ../../src/sass/_portfoliopages.scss */
+/* line 150, ../../src/sass/_portfoliopages.scss */
 #designer #skills h2 {
   color: #8592f6;
   font-family: "Norican", cursive;
   font-size: 80px;
   text-align: right;
+  padding-right: 5%;
 }
-/* line 141, ../../src/sass/_portfoliopages.scss */
+/* line 157, ../../src/sass/_portfoliopages.scss */
 #designer #skills h3 {
   margin-top: 3em;
   font-size: 30px;
   text-align: right;
+  padding-right: 5%;
 }
-/* line 148, ../../src/sass/_portfoliopages.scss */
+/* line 163, ../../src/sass/_portfoliopages.scss */
+#designer #skills ul {
+  padding-right: 5%;
+}
+/* line 165, ../../src/sass/_portfoliopages.scss */
 #designer #skills ul li {
   list-style: none;
   font-family: "Muli", sans-serif;
@@ -298,24 +413,24 @@ nav .navigation .navlist li a:hover {
   font-size: 20px;
   text-align: right;
 }
-/* line 154, ../../src/sass/_portfoliopages.scss */
+/* line 171, ../../src/sass/_portfoliopages.scss */
 #designer #skills ul li span {
   margin-left: 10px;
 }
-/* line 160, ../../src/sass/_portfoliopages.scss */
+/* line 177, ../../src/sass/_portfoliopages.scss */
 #designer #projects {
   width: 100%;
 }
-/* line 162, ../../src/sass/_portfoliopages.scss */
+/* line 179, ../../src/sass/_portfoliopages.scss */
 #designer #projects h3 {
   font-family: "Norican", cursive;
   margin: 0;
 }
-/* line 166, ../../src/sass/_portfoliopages.scss */
+/* line 183, ../../src/sass/_portfoliopages.scss */
 #designer #projects #project1 {
   background: pink;
 }
-/* line 168, ../../src/sass/_portfoliopages.scss */
+/* line 185, ../../src/sass/_portfoliopages.scss */
 #designer #projects #project1 h3 {
   color: #8592f6;
   font-size: 30px;
@@ -325,65 +440,74 @@ nav .navigation .navlist li a:hover {
   font-weight: bold;
   text-shadow: 2px 2px 2px white;
 }
-/* line 178, ../../src/sass/_portfoliopages.scss */
+/* line 195, ../../src/sass/_portfoliopages.scss */
 #designer #projects #project2 {
   background: pink;
 }
 
 @media screen and (min-width: 700px) {
-  /* line 185, ../../src/sass/_portfoliopages.scss */
+  /* line 202, ../../src/sass/_portfoliopages.scss */
   #designer #skills {
     background: url(../img/designface800.png) no-repeat top left;
     background-size: cover;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 194, ../../src/sass/_portfoliopages.scss */
+  /* line 211, ../../src/sass/_portfoliopages.scss */
   #designer #skills {
     width: 50%;
     order: 2;
     background: url(../img/designface.png) no-repeat top left;
     background-size: cover;
   }
-  /* line 200, ../../src/sass/_portfoliopages.scss */
+  /* line 217, ../../src/sass/_portfoliopages.scss */
   #designer #projects {
     width: 50%;
     order: 1;
   }
-  /* line 203, ../../src/sass/_portfoliopages.scss */
+  /* line 220, ../../src/sass/_portfoliopages.scss */
   #designer #projects #project1, #designer #projects #project2 {
     height: 50%;
     margin: 0;
     padding: 0;
   }
-  /* line 208, ../../src/sass/_portfoliopages.scss */
+  /* line 225, ../../src/sass/_portfoliopages.scss */
   #designer footer {
     order: 3;
   }
 }
+/* line 232, ../../src/sass/_portfoliopages.scss */
+#designer #skills ul, #designer #skills h3 {
+  padding-right: 10vw;
+}
+/* line 235, ../../src/sass/_portfoliopages.scss */
+#designer #skills h2 {
+  padding-right: 10vw;
+}
+
 @media screen and (min-width: 1200px) {
-  /* line 215, ../../src/sass/_portfoliopages.scss */
+  /* line 242, ../../src/sass/_portfoliopages.scss */
   #designer #skills {
     background: url(../img/designface5.png) no-repeat top left;
     background-size: cover;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 223, ../../src/sass/_portfoliopages.scss */
+  /* line 250, ../../src/sass/_portfoliopages.scss */
   #designer #skills {
     background: url(../img/designface4.png) no-repeat top left;
     background-size: cover;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 231, ../../src/sass/_portfoliopages.scss */
+  /* line 258, ../../src/sass/_portfoliopages.scss */
   #designer #skills {
     background: url(../img/designface2.png) no-repeat top left;
     background-size: cover;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 239, ../../src/sass/_portfoliopages.scss */
+  /* line 266, ../../src/sass/_portfoliopages.scss */
   #designer #skills {
     background: url(../img/designface3.png) no-repeat top left;
     background-size: cover;
