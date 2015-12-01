@@ -1,41 +1,51 @@
-nav {
+.bar {
 	width:100vw;
 	position:fixed;
 	top:0;
 	background:white;
-	height:90px;
+	display:flex;
+	justify-content:space-around;
+	z-index:100;
 	.brand {
-		position:absolute;
-		left:3em;
-		padding-bottom:1em;
+		margin-left:1em;
 	}
 	.brand:hover {
 		color:orange;
 	}
-	.navigation {
-		position:absolute;
-		right:0;
-		.navlist {
+	.contact {
+		padding-top:30px;
+		a {
+			text-decoration:none;
 			font-family:$generalfont;
 			color:black;
-			list-style:none;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			justify-content:flex-end;
-			li {
-				padding:1em 2.5em;
-				text-align:right;
-				a {
-					color:black;
-					text-decoration:none;
-					font-size:20px;
-					font-weight:bold;
-				}
-				a:hover {
-					color:orange;
-				}
+			text-align:right;
+			margin-right:3em;
+		}
+		p {
+			font-family:$generalfont;
+			color:black;
+			text-align:right;
+			margin-right:1.5em;
 		}
 	}
 }
+@media screen and (min-width:420px) {
+.bar {	
+	.contact {
+		p {
+			margin-right:0;
+		}
+		a {
+			margin-right:0;
+		}
+	}
+}
+}
+@media screen and (min-width:700px) {
+	.bar {
+		justify-content:space-between;
+		.contact {
+			padding-right:2em;
+		}
+	}
 }

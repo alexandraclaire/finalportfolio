@@ -14,20 +14,7 @@ h1 a:hover {
   color: orange;
 }
 
-/* line 21, ../../src/sass/_typography.scss */
-.developfont {
-  font-family: "Droid Sans Mono", serif;
-  font-size: 20px;
-  letter-spacing: 8px;
-}
-
-/* line 27, ../../src/sass/_typography.scss */
-.designfont {
-  font-family: "Norican", cursive;
-  font-size: 25px;
-}
-
-/* line 33, ../../src/sass/_typography.scss */
+/* line 18, ../../src/sass/_typography.scss */
 .subtitle {
   font-family: "Droid Sans Mono", serif;
 }
@@ -44,17 +31,24 @@ body {
 }
 
 /* line 8, ../../src/sass/_layout.scss */
+#wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+
+/* line 12, ../../src/sass/_layout.scss */
 .jumbo {
   background: #8592f6 url(../img/alexbanner.png) no-repeat 50% 100%;
   width: 100vw;
-  height: 75vh;
-  margin-top: 8vh;
+  height: 70vh;
+  margin-top: 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
+  z-index: 2000;
 }
-/* line 17, ../../src/sass/_layout.scss */
+/* line 22, ../../src/sass/_layout.scss */
 .jumbo .roles {
   display: flex;
   justify-content: space-between;
@@ -62,18 +56,18 @@ body {
   padding-top: 8em;
   padding-bottom: 2em;
 }
-/* line 23, ../../src/sass/_layout.scss */
+/* line 28, ../../src/sass/_layout.scss */
 .jumbo .roles .developer {
   font-family: "Droid Sans Mono", serif;
   font-size: 50px;
   color: white;
   text-decoration: none;
 }
-/* line 29, ../../src/sass/_layout.scss */
+/* line 34, ../../src/sass/_layout.scss */
 .jumbo .roles .developer:hover {
   color: orange;
 }
-/* line 32, ../../src/sass/_layout.scss */
+/* line 37, ../../src/sass/_layout.scss */
 .jumbo .roles .designer {
   font-size: 70px;
   letter-spacing: 3px;
@@ -81,12 +75,35 @@ body {
   font-family: "Norican", cursive;
   text-decoration: none;
 }
-/* line 39, ../../src/sass/_layout.scss */
+/* line 44, ../../src/sass/_layout.scss */
 .jumbo .roles .designer:hover {
   color: orange;
 }
 
-/* line 44, ../../src/sass/_layout.scss */
+/* line 49, ../../src/sass/_layout.scss */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+/* line 54, ../../src/sass/_layout.scss */
+.buttons a {
+  color: #8592f6;
+  text-decoration: none;
+  border: #8592f6 2px solid;
+  padding: 0.8em 1em;
+  font-family: "Muli", sans-serif;
+  margin-left: 0.5em;
+  margin-top: 5vh;
+}
+/* line 63, ../../src/sass/_layout.scss */
+.buttons a:hover {
+  color: white;
+  background: #8592f6;
+}
+
+/* line 68, ../../src/sass/_layout.scss */
 footer {
   font-family: "Muli", sans-serif;
   width: 100vw;
@@ -95,280 +112,305 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 51, ../../src/sass/_layout.scss */
-footer a {
-  color: orange;
-  text-decoration: none;
-}
-/* line 55, ../../src/sass/_layout.scss */
-footer .phone {
-  color: orange;
-}
 
-/* line 59, ../../src/sass/_layout.scss */
-.about, .contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100vw;
-  align-items: stretch;
-  height: 75vh;
-  margin-top: 16vh;
-}
-/* line 67, ../../src/sass/_layout.scss */
-.about .left, .contact .left {
-  font-family: "Muli", sans-serif;
-  margin-bottom: 2em;
-}
-/* line 70, ../../src/sass/_layout.scss */
-.about .left h2, .contact .left h2 {
-  font-size: 40px;
-  width: 80%;
-  margin: 0 auto;
-  color: #8592f6;
-  padding-bottom: 1em;
-}
-/* line 77, ../../src/sass/_layout.scss */
-.about .left p, .contact .left p {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 2em;
-  line-height: 30px;
-  font-size: 20px;
-}
-/* line 85, ../../src/sass/_layout.scss */
-.about .right, .contact .right {
-  font-family: "Muli", sans-serif;
-}
-/* line 87, ../../src/sass/_layout.scss */
-.about .right h2, .contact .right h2 {
-  font-size: 40px;
-  margin: 0 auto;
-  color: #8592f6;
-  padding-bottom: 1em;
-  padding-right: 15vw;
-}
-/* line 94, ../../src/sass/_layout.scss */
-.about .right .hobbies1, .about .right .hobbies2, .about .right .hobbies3, .contact .right .hobbies1, .contact .right .hobbies2, .contact .right .hobbies3 {
-  height: 500px;
-  width: 100vw;
-  background: pink;
-}
-
-@media screen and (min-width: 768px) {
-  /* line 103, ../../src/sass/_layout.scss */
-  .about .left {
-    width: 50%;
-  }
-  /* line 106, ../../src/sass/_layout.scss */
-  .about .right {
-    width: 50%;
-  }
-  /* line 108, ../../src/sass/_layout.scss */
-  .about .right .hobbies1, .about .right .hobbies2, .about .right .hobbies3 {
-    height: 25vh;
-  }
-}
 @media screen and (min-width: 900px) {
-  /* line 115, ../../src/sass/_layout.scss */
+  /* line 77, ../../src/sass/_layout.scss */
   .jumbo {
     justify-content: flex-end;
   }
-  /* line 117, ../../src/sass/_layout.scss */
+  /* line 79, ../../src/sass/_layout.scss */
   .jumbo .roles {
     padding-right: 10vw;
     padding-bottom: 5em;
   }
 }
 /* line 1, ../../src/sass/_navigation.scss */
-nav {
+.bar {
   width: 100vw;
   position: fixed;
   top: 0;
   background: white;
-  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
 }
-/* line 7, ../../src/sass/_navigation.scss */
-nav .brand {
-  position: absolute;
-  left: 3em;
-  padding-bottom: 1em;
+/* line 9, ../../src/sass/_navigation.scss */
+.bar .brand {
+  margin-left: 1em;
 }
 /* line 12, ../../src/sass/_navigation.scss */
-nav .brand:hover {
+.bar .brand:hover {
   color: orange;
 }
 /* line 15, ../../src/sass/_navigation.scss */
-nav .navigation {
-  position: absolute;
-  right: 0;
+.bar .contact {
+  padding-top: 30px;
 }
-/* line 18, ../../src/sass/_navigation.scss */
-nav .navigation .navlist {
+/* line 17, ../../src/sass/_navigation.scss */
+.bar .contact a {
+  text-decoration: none;
   font-family: "Muli", sans-serif;
   color: black;
-  list-style: none;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: flex-end;
-}
-/* line 26, ../../src/sass/_navigation.scss */
-nav .navigation .navlist li {
-  padding: 1em 2.5em;
   text-align: right;
+  margin-right: 3em;
 }
-/* line 29, ../../src/sass/_navigation.scss */
-nav .navigation .navlist li a {
+/* line 24, ../../src/sass/_navigation.scss */
+.bar .contact p {
+  font-family: "Muli", sans-serif;
   color: black;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-/* line 35, ../../src/sass/_navigation.scss */
-nav .navigation .navlist li a:hover {
-  color: orange;
+  text-align: right;
+  margin-right: 1.5em;
 }
 
-/* line 1, ../../src/sass/_portfoliopages.scss */
-#workhome {
-  background: #8592f6;
-  padding-top: 10vh;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+@media screen and (min-width: 420px) {
+  /* line 35, ../../src/sass/_navigation.scss */
+  .bar .contact p {
+    margin-right: 0;
+  }
+  /* line 38, ../../src/sass/_navigation.scss */
+  .bar .contact a {
+    margin-right: 0;
+  }
 }
-/* line 9, ../../src/sass/_portfoliopages.scss */
-#workhome h2 {
-  color: white;
-  font-size: 70px;
-  font-family: "Muli", sans-serif;
+@media screen and (min-width: 700px) {
+  /* line 45, ../../src/sass/_navigation.scss */
+  .bar {
+    justify-content: space-between;
+  }
+  /* line 47, ../../src/sass/_navigation.scss */
+  .bar .contact {
+    padding-right: 2em;
+  }
 }
-/* line 14, ../../src/sass/_portfoliopages.scss */
-#workhome a {
-  color: white;
-  text-decoration: none;
-  border: white 2px solid;
-  padding: 0.8em 1em;
-  font-family: "Muli", sans-serif;
-  margin-left: 0.5em;
-}
-/* line 22, ../../src/sass/_portfoliopages.scss */
-#workhome a:hover {
-  color: #8592f6;
-  background: white;
-}
-
-/* line 28, ../../src/sass/_portfoliopages.scss */
+/* line 2, ../../src/sass/_portfoliopages.scss */
 #developer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: flex-end;
   padding-top: 10em;
 }
-/* line 34, ../../src/sass/_portfoliopages.scss */
+/* line 8, ../../src/sass/_portfoliopages.scss */
 #developer #skills {
-  background: url(../img/codeface.png) no-repeat bottom right;
   width: 100%;
 }
-/* line 37, ../../src/sass/_portfoliopages.scss */
+/* line 10, ../../src/sass/_portfoliopages.scss */
 #developer #skills h2 {
   color: #8592f6;
   font-family: "Droid Sans Mono", serif;
-  font-size: 65px;
-  padding-left: 5%;
+  font-size: 50px;
 }
-/* line 43, ../../src/sass/_portfoliopages.scss */
+/* line 15, ../../src/sass/_portfoliopages.scss */
 #developer #skills h3 {
   margin-top: 3em;
   font-size: 30px;
-  padding-left: 5%;
 }
-/* line 48, ../../src/sass/_portfoliopages.scss */
-#developer #skills ul {
-  padding-left: 5%;
-}
-/* line 50, ../../src/sass/_portfoliopages.scss */
+/* line 20, ../../src/sass/_portfoliopages.scss */
 #developer #skills ul li {
   list-style: none;
   font-family: "Muli", sans-serif;
   line-height: 40px;
   font-size: 20px;
 }
-/* line 55, ../../src/sass/_portfoliopages.scss */
+/* line 25, ../../src/sass/_portfoliopages.scss */
 #developer #skills ul li span {
   margin-right: 10px;
 }
-/* line 61, ../../src/sass/_portfoliopages.scss */
+/* line 31, ../../src/sass/_portfoliopages.scss */
 #developer #projects {
   width: 100%;
 }
-/* line 63, ../../src/sass/_portfoliopages.scss */
+/* line 33, ../../src/sass/_portfoliopages.scss */
 #developer #projects h3 {
   font-family: "Droid Sans Mono", serif;
 }
 
-/* line 69, ../../src/sass/_portfoliopages.scss */
+/* line 38, ../../src/sass/_portfoliopages.scss */
+#designer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10em;
+  align-items: flex-start;
+}
+/* line 44, ../../src/sass/_portfoliopages.scss */
+#designer #skills {
+  width: 100%;
+}
+/* line 46, ../../src/sass/_portfoliopages.scss */
+#designer #skills h2 {
+  color: #8592f6;
+  font-family: "Norican", cursive;
+  font-size: 70px;
+  text-align: right;
+  margin-top: 0;
+}
+/* line 53, ../../src/sass/_portfoliopages.scss */
+#designer #skills h3 {
+  font-size: 30px;
+  text-align: right;
+}
+/* line 58, ../../src/sass/_portfoliopages.scss */
+#designer #skills ul li {
+  list-style: none;
+  font-family: "Muli", sans-serif;
+  line-height: 40px;
+  font-size: 20px;
+  text-align: right;
+}
+/* line 64, ../../src/sass/_portfoliopages.scss */
+#designer #skills ul li span {
+  margin-left: 10px;
+}
+/* line 70, ../../src/sass/_portfoliopages.scss */
+#designer #projects {
+  width: 100%;
+}
+
+/* line 76, ../../src/sass/_portfoliopages.scss */
+.rslides-container {
+  border-radius: 8px;
+  position: relative;
+  margin: 0 0 1em 0;
+  padding: 0.375em;
+  background: #fff;
+}
+
+/* line 84, ../../src/sass/_portfoliopages.scss */
 .rslides {
   position: relative;
   list-style: none;
   overflow: hidden;
-  width: 100%;
-  padding-left: 0;
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/* line 78, ../../src/sass/_portfoliopages.scss */
+/* line 91, ../../src/sass/_portfoliopages.scss */
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
-  width: 100%;
   left: 0;
   top: 0;
-}
-
-/* line 86, ../../src/sass/_portfoliopages.scss */
-.links {
+  width: 100%;
+  height: 65vh;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  width: 88%;
-  padding-left: 2em;
-}
-/* line 92, ../../src/sass/_portfoliopages.scss */
-.links a {
-  font-family: "Muli", sans-serif;
-  font-size: 18px;
-  border: 2px solid black;
-  color: black;
-  text-decoration: none;
-  padding: 1em 1.5em;
-  margin-right: 1em;
-  margin-top: 1em;
-}
-/* line 102, ../../src/sass/_portfoliopages.scss */
-.links a:hover {
-  color: white;
-  background: #8592f6;
-  border: 2px solid #8592f6;
+  align-items: center;
 }
 
+/* Slideshow navigator arrows. */
 /* line 108, ../../src/sass/_portfoliopages.scss */
-.rslides li h3 {
+a.rslides_nav {
+  padding: 0.25em;
+  line-height: 1;
+}
+
+/* line 113, ../../src/sass/_portfoliopages.scss */
+a.rslides_nav.prev {
+  float: left;
+  /* This CSS for custom icons */
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background: url(../img/aleft.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-top: -50px;
+}
+
+/* line 125, ../../src/sass/_portfoliopages.scss */
+a.rslides_nav.next {
+  float: right;
+  /* This CSS for custom icons */
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background: url(../img/aright.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  margin-top: -50px;
+  right: 5px;
+  /* to position to the right */
+}
+
+/* line 138, ../../src/sass/_portfoliopages.scss */
+a.rslides_nav:hover {
+  text-decoration: none;
+}
+
+/* Slideshow position indicator tabs. */
+/* line 144, ../../src/sass/_portfoliopages.scss */
+.rslides_tabs {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 151, ../../src/sass/_portfoliopages.scss */
+.rslides_tabs li {
+  margin: 0.375em 0.25em 0;
+  display: inline-block;
+}
+
+/* line 156, ../../src/sass/_portfoliopages.scss */
+.rslides_tabs a {
+  text-indent: -9999px;
+  font-size: 12px;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid;
+  border-color: #ccc;
+  background: #eee;
+  width: 1em;
+  height: 1em;
+}
+
+/* line 168, ../../src/sass/_portfoliopages.scss */
+.rslides_tabs a:hover {
+  border-color: #000;
+}
+
+/* Highlight the position indicator tab of currently active slide. */
+/* line 174, ../../src/sass/_portfoliopages.scss */
+.rslides_here a {
+  background: #e3e3e3;
+}
+
+/* line 177, ../../src/sass/_portfoliopages.scss */
+.rslides li img {
+  width: 200px;
+}
+
+/* line 180, ../../src/sass/_portfoliopages.scss */
+.rslides li .lg {
+  width: 400px;
+  height: auto;
+}
+
+/* line 184, ../../src/sass/_portfoliopages.scss */
+.rslides li .md {
+  width: 300px;
+  height: auto;
+}
+
+/* line 188, ../../src/sass/_portfoliopages.scss */
+.title {
+  background: #8592f6;
+}
+/* line 190, ../../src/sass/_portfoliopages.scss */
+.title h3 {
   font-family: "Droid Sans Mono", serif;
-  color: #8592f6;
+  color: white;
   font-size: 25px;
   text-transform: uppercase;
   padding-left: 1.5em;
 }
-
-/* line 115, ../../src/sass/_portfoliopages.scss */
-.rslides li p {
+/* line 197, ../../src/sass/_portfoliopages.scss */
+.title p {
   font-family: "Muli", sans-serif;
   font-size: 20px;
   width: 88%;
@@ -377,261 +419,57 @@ nav .navigation .navlist li a:hover {
   height: 100px;
 }
 
-/* line 123, ../../src/sass/_portfoliopages.scss */
-.rslides li img {
-  display: block;
-  float: left;
-  height: auto;
-  width: 100%;
-  border: 0;
-}
-
-/* line 130, ../../src/sass/_portfoliopages.scss */
-.centered-btns_nav:focus {
-  outline: none;
-}
-
-/* line 133, ../../src/sass/_portfoliopages.scss */
-.centered-btns_tabs {
-  margin-top: 10px;
-  text-align: center;
-}
-
-/* line 137, ../../src/sass/_portfoliopages.scss */
-.centered-btns_tabs li {
-  display: inline;
-  float: none;
-  _float: left;
-  *float: left;
-  margin-right: 5px;
-}
-
-/* line 144, ../../src/sass/_portfoliopages.scss */
-.centered-btns_tabs a {
-  text-indent: -9999px;
-  overflow: hidden;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background: #ccc;
-  background: rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  _display: block;
-  *display: block;
-  -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.3);
-  width: 9px;
-  height: 9px;
-}
-
-/* line 161, ../../src/sass/_portfoliopages.scss */
-.centered-btns_here a {
-  background: #222;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* line 165, ../../src/sass/_portfoliopages.scss */
-.centered-btns_nav {
-  z-index: 3;
-  position: absolute;
-  -webkit-tap-highlight-color: transparent;
-  top: 50%;
-  left: 0;
-  opacity: 0.7;
-  text-indent: -9999px;
-  overflow: hidden;
-  text-decoration: none;
-  height: 61px;
-  width: 38px;
-  background: transparent url("themes.gif") no-repeat left top;
-  margin-top: -45px;
-}
-
-/* line 180, ../../src/sass/_portfoliopages.scss */
-.centered-btns_nav:active {
-  opacity: 1.0;
-}
-
-/* line 183, ../../src/sass/_portfoliopages.scss */
-.centered-btns_nav.next {
-  left: auto;
-  background-position: right top;
-  right: 0;
-}
-
-@media screen and (min-width: 800px) {
-  /* line 190, ../../src/sass/_portfoliopages.scss */
-  #developer #skills {
-    width: 50%;
-  }
-  /* line 193, ../../src/sass/_portfoliopages.scss */
-  #developer #projects {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 900px) {
-  /* line 201, ../../src/sass/_portfoliopages.scss */
-  #developer #skills ul, #developer #skills h3 {
-    padding-left: 10vw;
-  }
-  /* line 204, ../../src/sass/_portfoliopages.scss */
-  #developer #skills h2 {
-    padding-left: 10vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 212, ../../src/sass/_portfoliopages.scss */
-  #developer #skills {
-    background: url(../img/codeface5.png) no-repeat bottom right;
-  }
-}
-@media screen and (min-width: 1300px) {
-  /* line 219, ../../src/sass/_portfoliopages.scss */
-  #developer #skills {
-    background: url(../img/codeface4.png) no-repeat bottom right;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 226, ../../src/sass/_portfoliopages.scss */
-  #developer #skills {
-    background: url(../img/codeface2.png) no-repeat bottom right;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 233, ../../src/sass/_portfoliopages.scss */
-  #developer #skills {
-    background: url(../img/codeface3.png) no-repeat bottom right;
-  }
-}
-/* line 240, ../../src/sass/_portfoliopages.scss */
-#designer {
+/* line 206, ../../src/sass/_portfoliopages.scss */
+.links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 10em;
-  align-items: stretch;
+  justify-content: center;
+  width: 88%;
+  padding-left: 2em;
 }
-/* line 246, ../../src/sass/_portfoliopages.scss */
-#designer #skills {
-  width: 100%;
-  background: url(../img/designface1.png) no-repeat center center;
-  background-size: cover;
+/* line 212, ../../src/sass/_portfoliopages.scss */
+.links a {
+  font-family: "Muli", sans-serif;
+  font-size: 18px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  margin-right: 1em;
+  margin-top: 1em;
 }
-/* line 250, ../../src/sass/_portfoliopages.scss */
-#designer #skills h2 {
+/* line 222, ../../src/sass/_portfoliopages.scss */
+.links a:hover {
   color: #8592f6;
-  font-family: "Norican", cursive;
-  font-size: 80px;
-  text-align: right;
-  padding-right: 5%;
-}
-/* line 257, ../../src/sass/_portfoliopages.scss */
-#designer #skills h3 {
-  margin-top: 3em;
-  font-size: 30px;
-  text-align: right;
-  padding-right: 5%;
-}
-/* line 263, ../../src/sass/_portfoliopages.scss */
-#designer #skills ul {
-  padding-right: 5%;
-}
-/* line 265, ../../src/sass/_portfoliopages.scss */
-#designer #skills ul li {
-  list-style: none;
-  font-family: "Muli", sans-serif;
-  line-height: 40px;
-  font-size: 20px;
-  text-align: right;
-}
-/* line 271, ../../src/sass/_portfoliopages.scss */
-#designer #skills ul li span {
-  margin-left: 10px;
-}
-/* line 278, ../../src/sass/_portfoliopages.scss */
-#designer #projects .rslides li p {
-  font-family: "Muli", sans-serif;
-  font-size: 20px;
-  width: 88%;
-  padding-left: 2em;
-  height: 30px;
-  margin-bottom: 2em;
-}
-/* line 286, ../../src/sass/_portfoliopages.scss */
-#designer #projects .rslides li img {
-  width: 88%;
-  padding-left: 2em;
+  background: white;
+  border: 2px solid white;
 }
 
-@media screen and (min-width: 700px) {
-  /* line 294, ../../src/sass/_portfoliopages.scss */
-  #designer #skills {
-    background: url(../img/designface800.png) no-repeat top left;
-    background-size: cover;
-  }
-}
 @media screen and (min-width: 800px) {
-  /* line 301, ../../src/sass/_portfoliopages.scss */
-  #designer {
-    height: 50vh;
+  /* line 231, ../../src/sass/_portfoliopages.scss */
+  #developer #skills, #designer #skills {
+    width: 50%;
   }
-  /* line 303, ../../src/sass/_portfoliopages.scss */
+  /* line 234, ../../src/sass/_portfoliopages.scss */
+  #developer #projects, #designer #projects {
+    width: 50%;
+  }
+  /* line 237, ../../src/sass/_portfoliopages.scss */
+  #developer #projects .slides li, #designer #projects .slides li {
+    height: 65vh;
+  }
+
+  /* line 243, ../../src/sass/_portfoliopages.scss */
+  #designer {
+    height: 65vh;
+  }
+  /* line 245, ../../src/sass/_portfoliopages.scss */
   #designer #skills {
     width: 50%;
     order: 2;
-    background: url(../img/designface.png) no-repeat top left;
-    background-size: cover;
   }
-  /* line 308, ../../src/sass/_portfoliopages.scss */
-  #designer #skills ul, #designer #skills h3 {
-    padding-right: 10vw;
-  }
-  /* line 311, ../../src/sass/_portfoliopages.scss */
-  #designer #skills h2 {
-    padding-right: 10vw;
-  }
-  /* line 315, ../../src/sass/_portfoliopages.scss */
-  #designer #projects {
-    width: 50%;
-    order: 1;
-  }
-  /* line 318, ../../src/sass/_portfoliopages.scss */
-  #designer #projects #project1, #designer #projects #project2 {
-    height: 50%;
-    margin: 0;
-    padding: 0;
-  }
-  /* line 323, ../../src/sass/_portfoliopages.scss */
+  /* line 249, ../../src/sass/_portfoliopages.scss */
   #designer footer {
     order: 3;
-  }
-}
-@media screen and (min-width: 1200px) {
-  /* line 330, ../../src/sass/_portfoliopages.scss */
-  #designer #skills {
-    background: url(../img/designface5.png) no-repeat top left;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1300px) {
-  /* line 338, ../../src/sass/_portfoliopages.scss */
-  #designer #skills {
-    background: url(../img/designface4.png) no-repeat top left;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 346, ../../src/sass/_portfoliopages.scss */
-  #designer #skills {
-    background: url(../img/designface2.png) no-repeat top left;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 354, ../../src/sass/_portfoliopages.scss */
-  #designer #skills {
-    background: url(../img/designface3.png) no-repeat top left;
-    background-size: cover;
   }
 }

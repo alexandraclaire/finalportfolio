@@ -5,15 +5,20 @@ body {
 	width:100vw;
 	margin:0;
 }
+#wrapper {
+	width:88%;
+	margin:0 auto;
+}
 .jumbo {
 	background:$purple url(../img/alexbanner.png) no-repeat 50% 100%;
 	width:100vw;
-	height:75vh;
-	margin-top:8vh;
+	height:70vh;
+	margin-top:10vh;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
 	align-items:stretch;
+	z-index:2000;
 	.roles {
 		display:flex;
 		justify-content:space-between;
@@ -41,6 +46,25 @@ body {
 			}
 	}
 }
+.buttons {
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		align-content:center;
+		a {
+		color:$purple;
+		text-decoration:none;
+		border:$purple 2px solid;
+		padding:0.8em 1em;
+		font-family:$generalfont;
+		margin-left:0.5em;
+		margin-top:5vh;
+	}
+	a:hover {
+		color:white;
+		background:$purple;
+	}
+}
 footer {
 	font-family:$generalfont;
 	width:100vw;
@@ -48,69 +72,7 @@ footer {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
-	a {
-		color:orange;
-		text-decoration:none;
-	}
-	.phone {
-		color:orange;
-	}
 }	
-.about, .contact {
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-between;
-	width:100vw;
-	align-items:stretch;
-	height:75vh;
-	margin-top:16vh;
-	.left {
-		font-family:$generalfont;
-		margin-bottom:2em;
-		h2 {
-			font-size:40px;
-			width:80%;
-			margin:0 auto;
-			color:$purple;
-			padding-bottom:1em;
-		}
-		p {
-			width:80%;
-			margin:0 auto;
-			padding-top:2em;
-			line-height:30px;
-			font-size:20px;
-		}
-	}
-	.right {
-		font-family:$generalfont;
-		h2 {
-			font-size:40px;
-			margin:0 auto;
-			color:$purple;
-			padding-bottom:1em;
-			padding-right:15vw;
-		}
-		.hobbies1, .hobbies2, .hobbies3 {
-			height:500px;
-			width:100vw;
-			background:pink;
-		}
-	}
-}
-@media screen and (min-width:768px) {
-	.about {
-		.left {
-			width:50%;
-		}
-		.right {
-			width:50%;
-			.hobbies1, .hobbies2, .hobbies3 {
-				height:25vh;
-			}
-		}
-	}	
-}
 @media screen and (min-width:900px) {
 	.jumbo {
 		justify-content:flex-end;

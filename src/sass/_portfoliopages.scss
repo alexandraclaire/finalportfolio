@@ -1,52 +1,22 @@
-#workhome {
-	background:$purple;
-	padding-top:10vh;
-	height:80vh;
-	display:flex;
-	justify-content:center;
-	flex-direction:column;
-	text-align:center;
-	h2 {
-		color:white;
-		font-size:70px;
-		font-family:$generalfont;
-	}
-	a {
-		color:white;
-		text-decoration:none;
-		border:white 2px solid;
-		padding:0.8em 1em;
-		font-family:$generalfont;
-		margin-left:0.5em;
-	}
-	a:hover {
-		color:$purple;
-		background:white;
-	}
-}
 //DEVELOPER SECTION
 #developer {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
-	align-items:stretch;
+	align-items:flex-end;
 	padding-top:10em;
 	#skills {
-	background:url(../img/codeface.png) no-repeat bottom right;
 	width:100%;
 		h2 {
 			color:$purple;
 			font-family:$developfont;
-			font-size:65px;
-			padding-left:5%;
+			font-size:50px;
 		}
 		h3 {
 			margin-top:3em;
 			font-size:30px;
-			padding-left:5%;
 		}
 		ul { 
-			padding-left:5%;
 			li {
 				list-style:none;
 				font-family:$generalfont;
@@ -65,203 +35,26 @@
 		}
 	}
 }
-//slides
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding-left:0;
-  margin-left:0;
-  padding-left:0;
-}
-.rslides li {
-  	-webkit-backface-visibility: hidden;
-  	position: absolute;
-  	display: none;
-  	width: 100%;
-  	left: 0;
-  	top: 0;
- }
- .links {
-  	display:flex;
-  	flex-wrap:wrap;
-  	justify-content:center;
-  	width:88%;
-  	padding-left:2em;
-  	a {
-  		font-family:$generalfont;
-  		font-size:18px;
-  		border:2px solid black;
-  		color:black;
-  		text-decoration:none;
-  		padding:1em 1.5em;
-  		margin-right:1em;
-  		margin-top:1em;
-  	}
-  	a:hover {
-  		color:white;
-  		background:$purple;
-  		border:2px solid $purple;
-  	}
- }
-.rslides li h3 {
-		font-family:$developfont;
-		color:$purple;
-		font-size:25px;
-		text-transform:uppercase;
-		padding-left:1.5em;
-}
-.rslides li p {
-	font-family:$generalfont;
-	font-size:20px;
-	width:88%;
-	padding-bottom:1em;
-	padding-left:2em;
-	height:100px;
-}
-.rslides li img {
-  display: block;
-  float: left;
-  height: auto;
-  width:100%;
-  border: 0;
-  }
-.centered-btns_nav:focus {
-  	outline: none;
-  	}
-.centered-btns_tabs {
-  margin-top: 10px;
-  text-align: center;
-  }
-.centered-btns_tabs li {
-  display: inline;
-  float: none;
-  _float: left;
-  *float: left;
-  margin-right: 5px;
-  }
-.centered-btns_tabs a {
-  	text-indent: -9999px;
-  	overflow: hidden;
-  	-webkit-border-radius: 15px;
-  	-moz-border-radius: 15px;
-  	border-radius: 15px;
-  	background: #ccc;
-  	background: rgba(0,0,0, .2);
-  	display: inline-block;
-  	_display: block;
-  	*display: block;
-  	-webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  	-moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  	box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
-  	width: 9px;
-  	height: 9px;
-  }			
-.centered-btns_here a {
-  	background: #222;
-  	background: rgba(0,0,0, .8);
-  }
-  .centered-btns_nav {
-  	z-index: 3;
-  	position: absolute;
-  	-webkit-tap-highlight-color: rgba(0,0,0,0);
-  	top: 50%;
-  	left: 0;
-  	opacity: 0.7;
-  	text-indent: -9999px;
-  	overflow: hidden;
-  	text-decoration: none;
-  	height: 61px;
-  	width: 38px;
-  	background: transparent url("themes.gif") no-repeat left top;
-  	margin-top: -45px;
-  }
-.centered-btns_nav:active {
-	opacity: 1.0;
-}
-.centered-btns_nav.next {
-  	left: auto;
-  	background-position: right top;
-  	right: 0;
-  }
-@media screen and (min-width:800px) {
-	#developer {
-		#skills {
-			width:50%;
-		}
-		#projects {
-			width:50%;
-		}
-	}
-}
-@media screen and (min-width:900px) {
-	#developer {
-		#skills {
-			ul, h3 {
-				padding-left:10vw;
-			}
-			h2 {
-				padding-left:10vw;
-			}
-		}
-	}			
-}
-@media screen and (min-width:1200px) {
-	#developer {
-		#skills {
-			background:url(../img/codeface5.png)  no-repeat bottom right;
-		}
-	}
-}
-@media screen and (min-width:1300px) {
-	#developer {
-		#skills {
-			background:url(../img/codeface4.png) no-repeat bottom right;
-		}
-	}
-}
-@media screen and (min-width:1500px) {
-	#developer {
-		#skills {
-			background:url(../img/codeface2.png)  no-repeat bottom right;
-		}
-	}
-}
-@media screen and (min-width:1600px) {
-	#developer {
-		#skills {
-			background:url(../img/codeface3.png)  no-repeat bottom right;
-		}
-	}
-}
-//DESIGN SECTION
-
 #designer {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
-	margin-top:10em;
-	align-items:stretch;
+	padding-top:10em;
+	align-items:flex-start;
 	#skills {
 	width:100%;
-	background:url(../img/designface1.png) no-repeat center center;
-	background-size:cover;
 		h2 {
 			color:$purple;
 			font-family:$designfont;
-			font-size:80px;
+			font-size:70px;
 			text-align:right;
-			padding-right:5%;
+			margin-top:0;
 		}
 		h3 {
-			margin-top:3em;
 			font-size:30px;
 			text-align:right;
-			padding-right:5%;
 		}
 		ul { 
-			padding-right:5%;
 			li {
 				list-style:none;
 				font-family:$generalfont;
@@ -275,85 +68,189 @@
 		}
 	}
 	#projects {
-	.rslides li p {
+		width:100%;
+	}
+}	
+
+//slides
+.rslides-container {   
+	border-radius:8px;
+    position: relative;
+    margin: 0 0 1em 0;
+    padding: 0.375em;
+    background: #fff;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height:65vh;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+}
+
+/* Slideshow navigator arrows. */
+
+a.rslides_nav {
+    padding: 0.25em;
+    line-height: 1;
+}
+
+a.rslides_nav.prev {
+        float: left;
+        /* This CSS for custom icons */
+        position:absolute; 
+        top:50%; 
+        z-index:10; 
+        background: url(../img/aleft.svg) no-repeat; 
+        width:50px;
+        height:50px;
+        margin-top:-50px;
+    }
+
+a.rslides_nav.next {
+        float: right;
+         /* This CSS for custom icons */
+        position:absolute; 
+        top:50%; 
+        z-index:10; 
+        background: url(../img/aright.svg) no-repeat; 
+        width:50px;
+        height:50px;
+        margin-top:-50px;
+        right:5px; /* to position to the right */
+    }
+
+a.rslides_nav:hover {
+        text-decoration: none;
+    }
+
+/* Slideshow position indicator tabs. */
+
+.rslides_tabs {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.rslides_tabs li {
+        margin: 0.375em 0.25em 0;
+        display: inline-block;
+    }
+
+.rslides_tabs a {
+		text-indent: -9999px;
+		font-size:12px;
+		border-radius:50%;
+        display: block;
+        border: 1px solid;
+        border-color: #ccc;
+        background: #eee;
+        width: 1em;  // 12px
+        height: 1em; // 12px
+    }
+
+.rslides_tabs a:hover {
+            border-color: #000;
+        }
+
+/* Highlight the position indicator tab of currently active slide. */
+
+.rslides_here a {
+    background: #e3e3e3;
+}
+.rslides li img {
+   width:200px;
+}
+ .rslides li .lg {
+  	width:400px;
+  	height:auto;
+  }
+ .rslides li .md {
+  	width:300px;
+  	height:auto;
+  } 
+ .title {
+	background: $purple;
+	h3 {
+		font-family:$developfont;
+		color:white;
+		font-size:25px;
+		text-transform:uppercase;
+		padding-left:1.5em;
+	}
+	p {
 	font-family:$generalfont;
 	font-size:20px;
 	width:88%;
+	padding-bottom:1em;
 	padding-left:2em;
-	height:30px;
-	margin-bottom:2em;
+	height:100px;
 	}
-	.rslides li img {
-		width:88%;
-		padding-left:2em;
+ }
+ .links {
+  	display:flex;
+  	flex-wrap:wrap;
+  	justify-content:center;
+  	width:88%;
+  	padding-left:2em;
+  	a {
+  		font-family:$generalfont;
+  		font-size:18px;
+  		border:2px solid white;
+  		color:white;
+  		text-decoration:none;
+  		padding:1em 1.5em;
+  		margin-right:1em;
+  		margin-top:1em;
+  	}
+  	a:hover {
+  		color:$purple;
+  		background:white;
+  		border:2px solid white;
+  	}
+}
+
+@media screen and (min-width:800px) {
+#developer, #designer	{
+	#skills {
+		width:50%;
 	}
-}
-}
-@media screen and (min-width:700px) {
-	#designer {
-		#skills {
-			background:url(../img/designface800.png) no-repeat top left;
-			background-size:cover;
+	#projects {
+		width:50%;
+		.slides {
+			li {
+				height:65vh;
+			}
 		}
 	}
 }
-@media screen and (min-width:800px) {
-#designer {
-	height:50vh;
+	#designer {
+	height:65vh;
 		#skills {
 			width:50%;
 			order:2;
-			background:url(../img/designface.png) no-repeat top left;
-			background-size:cover;
-			ul, h3 {
-				padding-right:10vw;
-			}
-			h2 {
-				padding-right:10vw;
-			}
-		}
-		#projects {
-			width:50%;
-			order:1;
-			#project1, #project2 {
-				height:50%;	
-				margin:0;
-				padding:0;		}
 		}
 		footer {
 			order:3;
 		}
 	}
-}	
-@media screen and (min-width:1200px) {
-	#designer {
-		#skills {
-			background:url(../img/designface5.png)  no-repeat top left;
-			background-size:cover;
-		}
-	}
-}
-@media screen and (min-width:1300px) {
-	#designer{
-		#skills {
-			background:url(../img/designface4.png) no-repeat top left;
-			background-size:cover;
-		}
-	}
-}
-@media screen and (min-width:1500px) {
-	#designer {
-		#skills {
-			background:url(../img/designface2.png)  no-repeat top left;
-			background-size:cover;
-		}
-	}
-}
-@media screen and (min-width:1600px) {
-	#designer {
-		#skills {
-			background:url(../img/designface3.png)  no-repeat  top left;
-			background-size:cover;
-		}
-	}
-}
+}		
+
+
+

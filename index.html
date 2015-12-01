@@ -7,37 +7,94 @@
 	<meta name="description" content="Web Developer and Designer">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
 <body>
 	<div class="container">
-		<nav>
+		<div class="bar">
 			<div class="brand">
 				<h1><a href="index.html"><span class="top">alexandra</span><br><span class="bottom">carter</span></a></h1>
 			</div><!--/brand-->
-			<div class="navigation">
-				<ul class="navlist">
-					<li><a href="work.html">Work</a>
-					</li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul><!--/navlist-->
-			</div><!--/navigation-->
-		</nav>		
-	<div class="jumbo">
-		<div class="roles">
-			<h2><a href="work.html#developer" class="developer">Developer</a></h2>
-			<h2><a href="work.html#designer" class="designer">Designer</a></h2>
-		</div><!--/roles-->
-	</div><!--/jumbo-->
-
-</div><!--/container-->	
-	<footer>
-		<div itemscope itemtype="http://schema.org/Person">
-				<p itemprop="name">&copy Alexandra Carter 2015</p>
+			<div class="contact">
 				<p class="phone" itemprop="telephone">021 064 8037</p>
 				<p><a href="mailto:alexandra.carternz@gmail.com" itemprop="email">alexandra.carternz@gmail.com</a></p>
+			</div><!--/navigation-->
+		</div><!--/bar-->		
+	<div class="jumbo">
+	</div><!--/jumbo-->	
+	<div class="buttons">
+				<a href="#developer">See My Development</a>
+				<a href="#designer">See My Designs</a>
+			</div><!--/buttons-->
+		</div><!--/container-->	
+		<div id="wrapper">		
+			<section id="developer">	
+					<div id="skills">
+						<h2>DEVELOPMENT</h2>
+						<h3><span class="subtitle">Skills:</span></h3>
+						<ul>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>HTML/HTML5</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>CSS3</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>Javascript</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>JQuery</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>Sass</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>Frameworks (Bootstrap)</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>CMS (Wordpress)</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>Google APIs (Maps)</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>Responsive Development</li>
+							<li><span><img src="assets/img/bullet.png" alt=""></span>E-Commerce</li>
+						</ul>
+					</div><!--/skills-->	
+					<div id="projects">
+					<div class="rslides-container">
+						<ul class="rslides">
+  							<li class="title"><h3>Hjem Store</h3><p>An E-Commerce project using Wordpress CMS and Woo Commerce Plugin.</p><span class="links"><a href="#">Go to Live Site</a></span></li>
+  							<li><img class= "lg" src="assets/img/shoppe1.png" alt=""></li>
+  							<li><img class="md" src="assets/img/shoppe2.png" alt=""></li>
+  							<li><img src="assets/img/shoppe3.png" alt=""></li>
+  							<li class="title"><h3>Brand Guidelines</h3><p>A project looking at Spotify's Brand Guidelines using HTML5, CSS3, and JQuery.</p><span class="links"><a href="#">Go to Live Site</a></span></li>
+  							<li><img class="lg" src="assets/img/brand1.png" alt=""></li>
+  							<li><img class="md" src="assets/img/brand2.png" alt=""></li>
+  							<li><img src="assets/img/brand3.png" alt=""></li>
+						</ul>
+						</div>
+				</div><!--/projects-->	
+			</section><!--/developer-->
+				<section id="designer">	
+				<div id="skills">	
+				<h2>Design</h2>
+						<h3><span class="subtitle">Skills:</span></h3>
+						<ul>
+							<li>Photoshop<span><img src="assets/img/bullet.png" alt=""></span></li>
+							<li>Illustrator<span><img src="assets/img/bullet.png" alt=""></span></li>
+							<li>Branding<span><img src="assets/img/bullet.png" alt=""></span></li>
+							<li>Image Optimization<span><img src="assets/img/bullet.png" alt=""></span></li>
+							<li>SVG<span><img src="assets/img/bullet.png" alt=""></span></li>
+							<li>UX/UI Design<span><img src="assets/img/bullet.png" alt=""></span></li>
+							<li>Mockups (Lo-fi and Hi-fi)<span><img src="assets/img/bullet.png" alt=""></span></li>
+						</ul>
+					</div><!--/skills-->
+					<div id="projects">
+					<div class="rslides-container">
+						<ul class="rslides">
+  							<li class="title"><h3>Illustrations</h3><p>A collection of illustrations used for community health web project using Adobe Illustrator.</p></li>
+  							<li><img src="assets/img/illustrations.png" alt=""></li>
+  							<li class="title"><h3>UX/UI</h3><p>Some examples of hi-fi mockups for a movie website project, using Photoshop and Balsamiq.</p></li>
+  							<li><img src="assets/img/mockups.png" alt=""></li>
+						</ul>
+						</div>
+				</div><!--/projects-->
+			<footer>
+		<div itemscope itemtype="http://schema.org/Person">
+				<p itemprop="name">&copy Alexandra Carter 2015</p>
 		</div><!--/person-->
 	</footer>
+			
+					</section><!--/designer-->
+					</div><!--/wrapper-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="assets/js/responsiveslides.min.js"></script>
+<script src="assets/js/custom.js"></script>	
 
 </body>
 </html>
