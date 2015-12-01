@@ -17,32 +17,20 @@ body {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
-	align-items:stretch;
-	z-index:2000;
+	align-items:flex-end;
 	.roles {
-		display:flex;
-		justify-content:space-between;
-		flex-direction:column;
-		padding-top:8em;
-		padding-bottom:2em;
 			.developer {
 			font-family:$developfont;
 			font-size:50px;
 			color:white;
 			text-decoration:none;
-			}
-			.developer:hover { 
-				color:orange;
-			}
+		}
 			.designer {
-				font-size:70px;
+				font-size:60px;
 			letter-spacing:3px;
 			color:white;
 			font-family:$designfont;
 			text-decoration:none;
-			}
-			.designer:hover { 
-				color:orange;
 			}
 	}
 }
@@ -73,12 +61,50 @@ footer {
 	flex-wrap:wrap;
 	justify-content:center;
 }	
-@media screen and (min-width:900px) {
+@media screen and (min-width:960px) {
 	.jumbo {
-		justify-content:flex-end;
+		justify-content:flex-start;
+		align-items:center;
 		.roles {
-		padding-right:10vw;
-		padding-bottom:5em;
+		padding-left:10%;
 		}
 	}
-}	
+}
+@media screen and (min-width:1300px) {
+	.jumbo {
+		.roles {
+		padding-left:20%;
+		}
+	}
+}
+@media screen and (min-width: 1400px) {
+  .jumbo {
+    background:$purple url(../img/alexbanner1600w.png) no-repeat 50% 100%;
+  }
+}
+@media screen and (max-width: 1400px) {
+
+.jumbo {
+    background: $purple url(../img/alexbanner1400w.png) no-repeat 50% 100%;
+	}
+}
+@media screen and (max-width: 1200px) {
+ .jumbo {
+   background:$purple url(../img/alexbanner1200w.png) no-repeat 50% 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+.jumbo {
+background:$purple url(../img/alexbanner1000w.png) no-repeat 50% 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+.jumbo {
+    background:$purple url(../img/alexbanner850w.png) no-repeat 50% 100%;
+ }
+}
+@media screen and (max-width: 700px) {
+ .jumbo {
+  background:$purple url(../img/alexbanner700w.png) no-repeat 50% 100%;
+	}
+}

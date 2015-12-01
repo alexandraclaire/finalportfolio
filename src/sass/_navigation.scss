@@ -27,6 +27,9 @@
 			text-align:right;
 			margin-right:1.5em;
 		}
+		a:hover, p:hover {
+			color:orange;
+		}
 	}
 }
 @media screen and (min-width:420px) {
@@ -46,6 +49,8 @@
 		justify-content:space-between;
 		.contact {
 			padding-right:2em;
+			font-size:18px;
+			padding-top:1em;
 		}
 	}
 }
