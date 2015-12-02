@@ -1,24 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Muli|Droid+Sans+Mono|Acme|Norican|Fredoka+One);
-/* line 7, ../../src/sass/_typography.scss */
-h1 {
-  font-family: "Muli", sans-serif;
-  text-align: left;
-}
-/* line 10, ../../src/sass/_typography.scss */
-h1 a {
-  text-decoration: none;
-  color: black;
-}
-/* line 14, ../../src/sass/_typography.scss */
-h1 a:hover {
-  color: orange;
-}
-
-/* line 18, ../../src/sass/_typography.scss */
-.subtitle {
-  font-family: "Droid Sans Mono", serif;
-}
-
 /* line 1, ../../src/sass/_layout.scss */
 body {
   margin: 0;
@@ -26,7 +6,7 @@ body {
 
 /* line 4, ../../src/sass/_layout.scss */
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0;
 }
 
@@ -39,7 +19,7 @@ body {
 /* line 12, ../../src/sass/_layout.scss */
 .jumbo {
   background: #8592f6 url(../img/alexbanner.png) no-repeat 50% 100%;
-  width: 100vw;
+  width: 100%;
   height: 70vh;
   margin-top: 10vh;
   display: flex;
@@ -50,13 +30,13 @@ body {
 /* line 22, ../../src/sass/_layout.scss */
 .jumbo .roles .developer {
   font-family: "Droid Sans Mono", serif;
-  font-size: 50px;
+  font-size: 35px;
   color: white;
   text-decoration: none;
 }
 /* line 28, ../../src/sass/_layout.scss */
 .jumbo .roles .designer {
-  font-size: 60px;
+  font-size: 40px;
   letter-spacing: 3px;
   color: white;
   font-family: "Norican", cursive;
@@ -79,17 +59,18 @@ body {
   font-family: "Muli", sans-serif;
   margin-left: 0.5em;
   margin-top: 5vh;
+  font-size: 18px;
 }
-/* line 51, ../../src/sass/_layout.scss */
+/* line 52, ../../src/sass/_layout.scss */
 .buttons a:hover {
   color: white;
   background: #8592f6;
 }
 
-/* line 56, ../../src/sass/_layout.scss */
+/* line 57, ../../src/sass/_layout.scss */
 footer {
   font-family: "Muli", sans-serif;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -97,59 +78,67 @@ footer {
 }
 
 @media screen and (min-width: 960px) {
-  /* line 65, ../../src/sass/_layout.scss */
+  /* line 66, ../../src/sass/_layout.scss */
   .jumbo {
     justify-content: flex-start;
     align-items: center;
   }
-  /* line 68, ../../src/sass/_layout.scss */
+  /* line 69, ../../src/sass/_layout.scss */
   .jumbo .roles {
     padding-left: 10%;
   }
+  /* line 71, ../../src/sass/_layout.scss */
+  .jumbo .roles .developer {
+    font-size: 50px;
+  }
+  /* line 74, ../../src/sass/_layout.scss */
+  .jumbo .roles .designer {
+    font-size: 60px;
+  }
 }
 @media screen and (min-width: 1300px) {
-  /* line 75, ../../src/sass/_layout.scss */
+  /* line 82, ../../src/sass/_layout.scss */
   .jumbo .roles {
     padding-left: 20%;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 81, ../../src/sass/_layout.scss */
+  /* line 88, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1600w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 1400px) {
-  /* line 87, ../../src/sass/_layout.scss */
+  /* line 93, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1400w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 92, ../../src/sass/_layout.scss */
+  /* line 98, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1200w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 97, ../../src/sass/_layout.scss */
+  /* line 103, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1000w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 850px) {
-  /* line 102, ../../src/sass/_layout.scss */
+  /* line 108, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner850w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 107, ../../src/sass/_layout.scss */
+  /* line 113, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner700w.png) no-repeat 50% 100%;
   }
 }
-/* line 1, ../../src/sass/_navigation.scss */
+/* line 1, ../../src/sass/_navbar.scss */
 .bar {
   width: 100vw;
   position: fixed;
@@ -159,148 +148,173 @@ footer {
   justify-content: space-around;
   z-index: 100;
 }
-/* line 9, ../../src/sass/_navigation.scss */
+/* line 9, ../../src/sass/_navbar.scss */
 .bar .brand {
   margin-left: 1em;
 }
-/* line 12, ../../src/sass/_navigation.scss */
-.bar .brand:hover {
-  color: orange;
+/* line 11, ../../src/sass/_navbar.scss */
+.bar .brand h1 {
+  font-family: "Muli", sans-serif;
+  text-align: left;
 }
-/* line 15, ../../src/sass/_navigation.scss */
+/* line 14, ../../src/sass/_navbar.scss */
+.bar .brand h1 a {
+  text-decoration: none;
+  color: black;
+}
+/* line 18, ../../src/sass/_navbar.scss */
+.bar .brand h1 a:hover {
+  color: #f27b22;
+}
+/* line 23, ../../src/sass/_navbar.scss */
 .bar .contact {
   padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
-/* line 17, ../../src/sass/_navigation.scss */
+/* line 28, ../../src/sass/_navbar.scss */
 .bar .contact a {
   text-decoration: none;
   font-family: "Muli", sans-serif;
-  color: black;
+  color: #f27b22;
   text-align: right;
   margin-right: 3em;
 }
-/* line 24, ../../src/sass/_navigation.scss */
-.bar .contact p {
+/* line 36, ../../src/sass/_navbar.scss */
+.bar .contact .phone p {
+  text-indent: -9999px;
   font-family: "Muli", sans-serif;
-  color: black;
-  text-align: right;
-  margin-right: 1.5em;
 }
-/* line 30, ../../src/sass/_navigation.scss */
-.bar .contact a:hover, .bar .contact p:hover {
-  color: orange;
+/* line 40, ../../src/sass/_navbar.scss */
+.bar .contact .phone img {
+  width: 50px;
+  height: auto;
+}
+/* line 46, ../../src/sass/_navbar.scss */
+.bar .contact .mail img {
+  height: 50px;
+  width: auto;
+  opacity: 0.7;
 }
 
 @media screen and (min-width: 420px) {
-  /* line 38, ../../src/sass/_navigation.scss */
+  /* line 58, ../../src/sass/_navbar.scss */
   .bar .contact p {
     margin-right: 0;
   }
-  /* line 41, ../../src/sass/_navigation.scss */
+  /* line 61, ../../src/sass/_navbar.scss */
   .bar .contact a {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 48, ../../src/sass/_navigation.scss */
+  /* line 68, ../../src/sass/_navbar.scss */
   .bar {
     justify-content: space-between;
   }
-  /* line 50, ../../src/sass/_navigation.scss */
+  /* line 70, ../../src/sass/_navbar.scss */
   .bar .contact {
     padding-right: 2em;
     font-size: 18px;
     padding-top: 1em;
   }
 }
-/* line 2, ../../src/sass/_portfoliopages.scss */
+/* line 2, ../../src/sass/_portfolio.scss */
 #developer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-end;
-  padding-top: 10em;
+  align-items: center;
+  padding-top: 8em;
 }
-/* line 8, ../../src/sass/_portfoliopages.scss */
-#developer #skills {
+/* line 8, ../../src/sass/_portfolio.scss */
+#developer #skills1 {
   width: 100%;
 }
-/* line 10, ../../src/sass/_portfoliopages.scss */
-#developer #skills h2 {
+/* line 10, ../../src/sass/_portfolio.scss */
+#developer #skills1 h2 {
   color: #8592f6;
   font-family: "Droid Sans Mono", serif;
-  font-size: 50px;
+  font-size: 40px;
   padding-left: 0.5em;
 }
-/* line 16, ../../src/sass/_portfoliopages.scss */
-#developer #skills h3 {
-  margin-top: 3em;
+/* line 16, ../../src/sass/_portfolio.scss */
+#developer #skills1 h3 {
+  font-family: "Droid Sans Mono", serif;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
   font-size: 30px;
   padding-left: 1em;
 }
-/* line 22, ../../src/sass/_portfoliopages.scss */
-#developer #skills ul li {
+/* line 24, ../../src/sass/_portfolio.scss */
+#developer #skills1 ul li {
   list-style: none;
   font-family: "Muli", sans-serif;
   line-height: 40px;
   font-size: 20px;
+  letter-spacing: 0.8px;
 }
-/* line 27, ../../src/sass/_portfoliopages.scss */
-#developer #skills ul li span {
+/* line 30, ../../src/sass/_portfolio.scss */
+#developer #skills1 ul li span {
   margin-right: 10px;
 }
-/* line 33, ../../src/sass/_portfoliopages.scss */
-#developer #projects {
+/* line 36, ../../src/sass/_portfolio.scss */
+#developer #projects1 {
   width: 100%;
 }
-/* line 35, ../../src/sass/_portfoliopages.scss */
-#developer #projects h3 {
+/* line 38, ../../src/sass/_portfolio.scss */
+#developer #projects1 h3 {
   font-family: "Droid Sans Mono", serif;
 }
 
-/* line 40, ../../src/sass/_portfoliopages.scss */
+/* line 43, ../../src/sass/_portfolio.scss */
 #designer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 10em;
-  align-items: flex-start;
+  align-items: center;
+  padding-bottom: 10em;
 }
-/* line 46, ../../src/sass/_portfoliopages.scss */
-#designer #skills {
+/* line 49, ../../src/sass/_portfolio.scss */
+#designer #skills2 {
   width: 100%;
 }
-/* line 48, ../../src/sass/_portfoliopages.scss */
-#designer #skills h2 {
+/* line 51, ../../src/sass/_portfolio.scss */
+#designer #skills2 h2 {
   color: #8592f6;
   font-family: "Norican", cursive;
   font-size: 70px;
   text-align: right;
   margin-top: 0;
 }
-/* line 55, ../../src/sass/_portfoliopages.scss */
-#designer #skills h3 {
-  font-size: 30px;
+/* line 58, ../../src/sass/_portfolio.scss */
+#designer #skills2 h3 {
   text-align: right;
+  font-family: "Droid Sans Mono", serif;
+  font-size: 30px;
+  padding-bottom: 1em;
 }
-/* line 60, ../../src/sass/_portfoliopages.scss */
-#designer #skills ul li {
+/* line 65, ../../src/sass/_portfolio.scss */
+#designer #skills2 ul li {
   list-style: none;
   font-family: "Muli", sans-serif;
   line-height: 40px;
   font-size: 20px;
   text-align: right;
+  letter-spacing: 0.8px;
 }
-/* line 66, ../../src/sass/_portfoliopages.scss */
-#designer #skills ul li span {
+/* line 72, ../../src/sass/_portfolio.scss */
+#designer #skills2 ul li span {
   margin-left: 10px;
 }
-/* line 72, ../../src/sass/_portfoliopages.scss */
-#designer #projects {
+/* line 78, ../../src/sass/_portfolio.scss */
+#designer #projects2 {
   width: 100%;
 }
 
-/* line 78, ../../src/sass/_portfoliopages.scss */
+/* line 85, ../../src/sass/_portfolio.scss */
 .rslides-container {
   border-radius: 8px;
   position: relative;
@@ -309,7 +323,7 @@ footer {
   background: #fff;
 }
 
-/* line 86, ../../src/sass/_portfoliopages.scss */
+/* line 93, ../../src/sass/_portfolio.scss */
 .rslides {
   position: relative;
   list-style: none;
@@ -318,7 +332,7 @@ footer {
   padding: 0;
 }
 
-/* line 93, ../../src/sass/_portfoliopages.scss */
+/* line 100, ../../src/sass/_portfolio.scss */
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
@@ -326,22 +340,21 @@ footer {
   left: 0;
   top: 0;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 /* Slideshow navigator arrows. */
-/* line 110, ../../src/sass/_portfoliopages.scss */
+/* line 116, ../../src/sass/_portfolio.scss */
 a.rslides_nav {
   padding: 0.25em;
   line-height: 1;
 }
 
-/* line 115, ../../src/sass/_portfoliopages.scss */
+/* line 121, ../../src/sass/_portfolio.scss */
 a.rslides_nav.prev {
   float: left;
   /* This CSS for custom icons */
@@ -354,7 +367,7 @@ a.rslides_nav.prev {
   margin-top: -30px;
 }
 
-/* line 127, ../../src/sass/_portfoliopages.scss */
+/* line 133, ../../src/sass/_portfolio.scss */
 a.rslides_nav.next {
   float: right;
   /* This CSS for custom icons */
@@ -369,13 +382,13 @@ a.rslides_nav.next {
   /* to position to the right */
 }
 
-/* line 140, ../../src/sass/_portfoliopages.scss */
+/* line 146, ../../src/sass/_portfolio.scss */
 a.rslides_nav:hover {
   text-decoration: none;
 }
 
 /* Slideshow position indicator tabs. */
-/* line 146, ../../src/sass/_portfoliopages.scss */
+/* line 152, ../../src/sass/_portfolio.scss */
 .rslides_tabs {
   margin: 0;
   padding: 0;
@@ -383,131 +396,280 @@ a.rslides_nav:hover {
   line-height: 1;
 }
 
-/* line 153, ../../src/sass/_portfoliopages.scss */
+/* line 159, ../../src/sass/_portfolio.scss */
 .rslides_tabs li {
   margin: 0.375em 0.25em 0;
   display: inline-block;
 }
 
-/* line 158, ../../src/sass/_portfoliopages.scss */
+/* line 164, ../../src/sass/_portfolio.scss */
 .rslides_tabs a {
   text-indent: -9999px;
   font-size: 12px;
   border-radius: 50%;
   display: block;
-  border: 1px solid;
-  border-color: #ccc;
   background: #eee;
   width: 1em;
   height: 1em;
 }
 
-/* line 170, ../../src/sass/_portfoliopages.scss */
+/* line 174, ../../src/sass/_portfolio.scss */
 .rslides_tabs a:hover {
   border-color: #000;
 }
 
 /* Highlight the position indicator tab of currently active slide. */
-/* line 176, ../../src/sass/_portfoliopages.scss */
+/* line 180, ../../src/sass/_portfolio.scss */
 .rslides_here a {
-  background: #e3e3e3;
+  background: #f27b22;
+  border: none;
 }
 
-/* line 179, ../../src/sass/_portfoliopages.scss */
+/* line 184, ../../src/sass/_portfolio.scss */
 .rslides li img {
-  width: 200px;
+  width: 100px;
 }
 
-/* line 182, ../../src/sass/_portfoliopages.scss */
+/* line 187, ../../src/sass/_portfolio.scss */
 .rslides li .lg {
   width: 250px;
   height: auto;
 }
 
-/* line 186, ../../src/sass/_portfoliopages.scss */
+/* line 191, ../../src/sass/_portfolio.scss */
 .rslides li .md {
-  width: 200px;
+  width: 180px;
   height: auto;
 }
 
-/* line 191, ../../src/sass/_portfoliopages.scss */
+/* line 196, ../../src/sass/_portfolio.scss */
 .title h3 {
   font-family: "Droid Sans Mono", serif;
   color: #8592f6;
   font-size: 30px;
   text-transform: uppercase;
+  text-align: center;
 }
-/* line 197, ../../src/sass/_portfoliopages.scss */
+/* line 203, ../../src/sass/_portfolio.scss */
 .title p {
   font-family: "Muli", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   width: 70%;
   padding-bottom: 1em;
   height: 100px;
   text-align: center;
+  letter-spacing: 0.8px;
 }
 
-/* line 206, ../../src/sass/_portfoliopages.scss */
+/* line 213, ../../src/sass/_portfolio.scss */
 .links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 88%;
-  padding-left: 2em;
 }
-/* line 212, ../../src/sass/_portfoliopages.scss */
+/* line 218, ../../src/sass/_portfolio.scss */
 .links a {
   font-family: "Muli", sans-serif;
   font-size: 18px;
   border: 2px solid #8592f6;
   color: #8592f6;
   text-decoration: none;
-  padding: 1em 1.5em;
-  margin-top: 1em;
-  text-align: center;
+  padding: 0.8em 1.2em;
+  letter-spacing: 0.8px;
 }
-/* line 222, ../../src/sass/_portfoliopages.scss */
+/* line 227, ../../src/sass/_portfolio.scss */
 .links a:hover {
   color: white;
   background: #8592f6;
   border: 2px solid #8592f6;
 }
 
+/* line 233, ../../src/sass/_portfolio.scss */
+#pageend {
+  background: #8592f6;
+  width: 100%;
+  color: white;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20vh;
+}
+/* line 242, ../../src/sass/_portfolio.scss */
+#pageend h3 {
+  font-size: 40px;
+  text-align: center;
+}
+/* line 246, ../../src/sass/_portfolio.scss */
+#pageend a {
+  color: white;
+  border: 2px solid white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+}
+/* line 255, ../../src/sass/_portfolio.scss */
+#pageend a:hover {
+  color: #8592f6;
+  background: white;
+  border: 2px solid white;
+}
+/* line 260, ../../src/sass/_portfolio.scss */
+#pageend p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+}
+/* line 267, ../../src/sass/_portfolio.scss */
+#pageend footer {
+  padding-top: 10em;
+}
+/* line 271, ../../src/sass/_portfolio.scss */
+#pageend .left, #pageend .right {
+  width: 88%;
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* line 279, ../../src/sass/_portfolio.scss */
+#pageend .left .social-media, #pageend .right .social-media {
+  list-style: none;
+  padding: 0;
+}
+/* line 282, ../../src/sass/_portfolio.scss */
+#pageend .left .social-media li, #pageend .right .social-media li {
+  margin-right: .5em;
+  border-radius: 3px;
+  float: left;
+}
+/* line 286, ../../src/sass/_portfolio.scss */
+#pageend .left .social-media li a, #pageend .right .social-media li a {
+  display: block;
+  padding: 0;
+}
+/* line 292, ../../src/sass/_portfolio.scss */
+#pageend .left .social-media .linkedin a, #pageend .right .social-media .linkedin a {
+  width: 30px;
+  height: 30px;
+  background: url(../img/social.png) no-repeat;
+  border: none;
+}
+/* line 302, ../../src/sass/_portfolio.scss */
+#pageend .left .social-media .github a, #pageend .right .social-media .github a {
+  width: 30px;
+  height: 30px;
+  background: url(../img/social.png) no-repeat;
+  background-position: -30px 0;
+  border: none;
+}
+@-webkit-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@-moz-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@-o-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+/* line 344, ../../src/sass/_portfolio.scss */
+#pageend .left .social-media .linkedin:hover, #pageend .left .social-media .github:hover, #pageend .right .social-media .linkedin:hover, #pageend .right .social-media .github:hover {
+  -webkit-animation: enlarge 2s infinite alternate;
+  -moz-animation: enlarge 2s infinite alternate;
+  -o-animation: enlarge 2s infinite alternate;
+  animation: enlarge 2s infinite alternate;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 355, ../../src/sass/_portfolio.scss */
+  #pageend a {
+    width: 30%;
+  }
+  /* line 358, ../../src/sass/_portfolio.scss */
+  #pageend p {
+    width: 60%;
+  }
+}
 @media screen and (min-width: 800px) {
-  /* line 231, ../../src/sass/_portfoliopages.scss */
-  #developer #skills, #designer #skills {
+  /* line 365, ../../src/sass/_portfolio.scss */
+  #developer #skills1, #developer #skills2, #designer #skills1, #designer #skills2 {
     width: 50%;
   }
-  /* line 234, ../../src/sass/_portfoliopages.scss */
-  #developer #projects, #designer #projects {
+  /* line 368, ../../src/sass/_portfolio.scss */
+  #developer #projects1, #developer #projects2, #designer #projects1, #designer #projects2 {
     width: 50%;
   }
-  /* line 237, ../../src/sass/_portfoliopages.scss */
-  #developer #projects .rslides li, #designer #projects .rslides li {
-    height: 65vh;
+  /* line 371, ../../src/sass/_portfolio.scss */
+  #developer #projects1 .rslides li, #developer #projects2 .rslides li, #designer #projects1 .rslides li, #designer #projects2 .rslides li {
+    height: 60vh;
+  }
+  /* line 375, ../../src/sass/_portfolio.scss */
+  #developer #projects1 .rslides .title p, #developer #projects2 .rslides .title p, #designer #projects1 .rslides .title p, #designer #projects2 .rslides .title p {
+    font-size: 20px;
   }
 
-  /* line 243, ../../src/sass/_portfoliopages.scss */
+  /* line 382, ../../src/sass/_portfolio.scss */
   #designer {
     height: 65vh;
   }
-  /* line 245, ../../src/sass/_portfoliopages.scss */
-  #designer #skills {
+  /* line 384, ../../src/sass/_portfolio.scss */
+  #designer #skills2 {
     width: 50%;
     order: 2;
   }
-  /* line 249, ../../src/sass/_portfoliopages.scss */
-  #designer footer {
-    order: 3;
+  /* line 388, ../../src/sass/_portfolio.scss */
+  #designer #projects2 {
+    order: 1;
+    width: 50%;
+  }
+
+  /* line 393, ../../src/sass/_portfolio.scss */
+  #pageend {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /* line 396, ../../src/sass/_portfolio.scss */
+  #pageend .left, #pageend .right {
+    width: 50%;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 260, ../../src/sass/_portfoliopages.scss */
-  #developer #projects .rslides li .lg, #designer #projects .rslides li .lg {
+  /* line 408, ../../src/sass/_portfolio.scss */
+  #developer #projects1 .rslides-container .rslides li .lg, #developer #projects2 .rslides-container .rslides li .lg, #designer #projects1 .rslides-container .rslides li .lg, #designer #projects2 .rslides-container .rslides li .lg {
     width: 500px;
   }
-  /* line 263, ../../src/sass/_portfoliopages.scss */
-  #developer #projects .rslides li .md, #designer #projects .rslides li .md {
+  /* line 411, ../../src/sass/_portfolio.scss */
+  #developer #projects1 .rslides-container .rslides li .md, #developer #projects2 .rslides-container .rslides li .md, #designer #projects1 .rslides-container .rslides li .md, #designer #projects2 .rslides-container .rslides li .md {
     width: 300px;
   }
 }

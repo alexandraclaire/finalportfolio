@@ -8,28 +8,48 @@
 	z-index:100;
 	.brand {
 		margin-left:1em;
-	}
-	.brand:hover {
-		color:orange;
+		h1 {
+			font-family:$generalfont;
+			text-align:left;
+			a {
+				text-decoration:none;
+				color:black;
+			}
+			a:hover {
+				color:$orange;
+			}
+		}	
 	}
 	.contact {
 		padding-top:30px;
+		display:flex;
+		flex-direction:row;
+		align-items:baseline;
 		a {
 			text-decoration:none;
 			font-family:$generalfont;
-			color:black;
+			color:$orange;
 			text-align:right;
 			margin-right:3em;
 		}
-		p {
-			font-family:$generalfont;
-			color:black;
-			text-align:right;
-			margin-right:1.5em;
+		.phone {
+			p {
+				text-indent:-9999px;
+				font-family:$generalfont;
+			}
+			img {
+				width:50px;
+				height:auto;
+			}
 		}
-		a:hover, p:hover {
-			color:orange;
+		.mail {
+			img {
+				height:50px;
+				width:auto;
+				opacity:0.7;
+			}
 		}
+
 	}
 }
 @media screen and (min-width:420px) {
