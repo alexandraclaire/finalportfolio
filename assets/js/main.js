@@ -17,4 +17,16 @@ $(function() {
         before: function () {}, // Function: Before callback
         after: function () {}   // Function: After callback
     });
+    $("#number").hide();
+    $(".phone").click(function(){
+        $("#number").show("1000", "linear");
+    });
+    $(".scroll").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({
+            scrollTop:$(this.hash).offset().top}, 
+            500
+            );
+    });
 });
+

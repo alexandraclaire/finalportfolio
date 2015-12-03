@@ -6,7 +6,7 @@ images_dir = "assets/"
 http_generated_images_path = "../"
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
-output_style = :expanded
+output_style = :compressed
 # The environment mode. Defaults to :production, can also be :development
 environment = :development
 # Chrome needs a precision of 7 to round properly

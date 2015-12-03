@@ -22,19 +22,27 @@ body {
   width: 100%;
   height: 70vh;
   margin-top: 10vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
-/* line 22, ../../src/sass/_layout.scss */
+/* line 30, ../../src/sass/_layout.scss */
 .jumbo .roles .developer {
   font-family: "Droid Sans Mono", serif;
   font-size: 35px;
   color: white;
   text-decoration: none;
 }
-/* line 28, ../../src/sass/_layout.scss */
+/* line 36, ../../src/sass/_layout.scss */
 .jumbo .roles .designer {
   font-size: 40px;
   letter-spacing: 3px;
@@ -43,14 +51,22 @@ body {
   text-decoration: none;
 }
 
-/* line 37, ../../src/sass/_layout.scss */
+/* line 45, ../../src/sass/_layout.scss */
 .buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
-/* line 42, ../../src/sass/_layout.scss */
+/* line 58, ../../src/sass/_layout.scss */
 .buttons a {
   color: #8592f6;
   text-decoration: none;
@@ -61,79 +77,111 @@ body {
   margin-top: 5vh;
   font-size: 18px;
 }
-/* line 52, ../../src/sass/_layout.scss */
+@-webkit-keyframes enlarge {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+@keyframes enlarge {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+/* line 88, ../../src/sass/_layout.scss */
 .buttons a:hover {
   color: white;
   background: #8592f6;
+  -webkit-animation: enlarge 2s infinite alternate;
+  animation: enlarge 2s infinite alternate;
 }
 
-/* line 57, ../../src/sass/_layout.scss */
+/* line 95, ../../src/sass/_layout.scss */
 footer {
   font-family: "Muli", sans-serif;
   width: 100%;
   text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 @media screen and (min-width: 960px) {
-  /* line 66, ../../src/sass/_layout.scss */
+  /* line 110, ../../src/sass/_layout.scss */
   .jumbo {
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
   }
-  /* line 69, ../../src/sass/_layout.scss */
+  /* line 117, ../../src/sass/_layout.scss */
   .jumbo .roles {
     padding-left: 10%;
   }
-  /* line 71, ../../src/sass/_layout.scss */
+  /* line 119, ../../src/sass/_layout.scss */
   .jumbo .roles .developer {
     font-size: 50px;
   }
-  /* line 74, ../../src/sass/_layout.scss */
+  /* line 122, ../../src/sass/_layout.scss */
   .jumbo .roles .designer {
     font-size: 60px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 82, ../../src/sass/_layout.scss */
+  /* line 130, ../../src/sass/_layout.scss */
   .jumbo .roles {
     padding-left: 20%;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 88, ../../src/sass/_layout.scss */
+  /* line 136, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1600w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 1400px) {
-  /* line 93, ../../src/sass/_layout.scss */
+  /* line 141, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1400w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 98, ../../src/sass/_layout.scss */
+  /* line 146, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1200w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 103, ../../src/sass/_layout.scss */
+  /* line 151, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner1000w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 850px) {
-  /* line 108, ../../src/sass/_layout.scss */
+  /* line 156, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner850w.png) no-repeat 50% 100%;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 113, ../../src/sass/_layout.scss */
+  /* line 161, ../../src/sass/_layout.scss */
   .jumbo {
     background: #8592f6 url(../img/alexbanner700w.png) no-repeat 50% 100%;
   }
@@ -144,36 +192,47 @@ footer {
   position: fixed;
   top: 0;
   background: white;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   z-index: 100;
+  height: 120px;
 }
-/* line 9, ../../src/sass/_navbar.scss */
+/* line 14, ../../src/sass/_navbar.scss */
 .bar .brand {
   margin-left: 1em;
 }
-/* line 11, ../../src/sass/_navbar.scss */
+/* line 16, ../../src/sass/_navbar.scss */
 .bar .brand h1 {
   font-family: "Muli", sans-serif;
   text-align: left;
 }
-/* line 14, ../../src/sass/_navbar.scss */
+/* line 19, ../../src/sass/_navbar.scss */
 .bar .brand h1 a {
   text-decoration: none;
   color: black;
 }
-/* line 18, ../../src/sass/_navbar.scss */
+/* line 23, ../../src/sass/_navbar.scss */
 .bar .brand h1 a:hover {
   color: #f27b22;
 }
-/* line 23, ../../src/sass/_navbar.scss */
+/* line 28, ../../src/sass/_navbar.scss */
 .bar .contact {
   padding-top: 30px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
-/* line 28, ../../src/sass/_navbar.scss */
+/* line 39, ../../src/sass/_navbar.scss */
 .bar .contact a {
   text-decoration: none;
   font-family: "Muli", sans-serif;
@@ -181,17 +240,42 @@ footer {
   text-align: right;
   margin-right: 3em;
 }
-/* line 36, ../../src/sass/_navbar.scss */
+/* line 47, ../../src/sass/_navbar.scss */
 .bar .contact .phone p {
-  text-indent: -9999px;
   font-family: "Muli", sans-serif;
+  color: #f27b22;
 }
-/* line 40, ../../src/sass/_navbar.scss */
+/* line 51, ../../src/sass/_navbar.scss */
 .bar .contact .phone img {
   width: 50px;
   height: auto;
 }
-/* line 46, ../../src/sass/_navbar.scss */
+@-webkit-keyframes enlarge {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+@keyframes enlarge {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+/* line 76, ../../src/sass/_navbar.scss */
+.bar .contact .phone:hover, .bar .contact .mail:hover {
+  -webkit-animation: enlarge 2s infinite alternate;
+  animation: enlarge 2s infinite alternate;
+}
+/* line 81, ../../src/sass/_navbar.scss */
 .bar .contact .mail img {
   height: 50px;
   width: auto;
@@ -199,21 +283,23 @@ footer {
 }
 
 @media screen and (min-width: 420px) {
-  /* line 58, ../../src/sass/_navbar.scss */
+  /* line 93, ../../src/sass/_navbar.scss */
   .bar .contact p {
     margin-right: 0;
   }
-  /* line 61, ../../src/sass/_navbar.scss */
+  /* line 96, ../../src/sass/_navbar.scss */
   .bar .contact a {
     margin-right: 0;
   }
 }
 @media screen and (min-width: 700px) {
-  /* line 68, ../../src/sass/_navbar.scss */
+  /* line 103, ../../src/sass/_navbar.scss */
   .bar {
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  /* line 70, ../../src/sass/_navbar.scss */
+  /* line 107, ../../src/sass/_navbar.scss */
   .bar .contact {
     padding-right: 2em;
     font-size: 18px;
@@ -478,14 +564,50 @@ a.rslides_nav:hover {
   padding: 0.8em 1.2em;
   letter-spacing: 0.8px;
 }
-/* line 227, ../../src/sass/_portfolio.scss */
+@-webkit-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@-moz-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@-o-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+/* line 259, ../../src/sass/_portfolio.scss */
 .links a:hover {
   color: white;
   background: #8592f6;
   border: 2px solid #8592f6;
+  -webkit-animation: enlarge 2s infinite alternate;
+  -moz-animation: enlarge 2s infinite alternate;
+  -o-animation: enlarge 2s infinite alternate;
+  animation: enlarge 2s infinite alternate;
 }
 
-/* line 233, ../../src/sass/_portfolio.scss */
+/* line 269, ../../src/sass/_portfolio.scss */
 #pageend {
   background: #8592f6;
   width: 100%;
@@ -496,12 +618,12 @@ a.rslides_nav:hover {
   justify-content: center;
   padding-top: 20vh;
 }
-/* line 242, ../../src/sass/_portfolio.scss */
+/* line 278, ../../src/sass/_portfolio.scss */
 #pageend h3 {
   font-size: 40px;
   text-align: center;
 }
-/* line 246, ../../src/sass/_portfolio.scss */
+/* line 282, ../../src/sass/_portfolio.scss */
 #pageend a {
   color: white;
   border: 2px solid white;
@@ -511,24 +633,60 @@ a.rslides_nav:hover {
   font-size: 18px;
   letter-spacing: 0.8px;
 }
-/* line 255, ../../src/sass/_portfolio.scss */
+@-webkit-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@-moz-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@-o-keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+/* line 323, ../../src/sass/_portfolio.scss */
 #pageend a:hover {
   color: #8592f6;
   background: white;
   border: 2px solid white;
+  -webkit-animation: enlarge 2s infinite alternate;
+  -moz-animation: enlarge 2s infinite alternate;
+  -o-animation: enlarge 2s infinite alternate;
+  animation: enlarge 2s infinite alternate;
 }
-/* line 260, ../../src/sass/_portfolio.scss */
+/* line 332, ../../src/sass/_portfolio.scss */
 #pageend p {
   font-size: 18px;
   text-align: center;
   line-height: 25px;
   letter-spacing: 0.8px;
 }
-/* line 267, ../../src/sass/_portfolio.scss */
+/* line 339, ../../src/sass/_portfolio.scss */
 #pageend footer {
   padding-top: 10em;
 }
-/* line 271, ../../src/sass/_portfolio.scss */
+/* line 343, ../../src/sass/_portfolio.scss */
 #pageend .left, #pageend .right {
   width: 88%;
   padding-bottom: 2em;
@@ -538,30 +696,30 @@ a.rslides_nav:hover {
   justify-content: center;
   align-items: center;
 }
-/* line 279, ../../src/sass/_portfolio.scss */
+/* line 351, ../../src/sass/_portfolio.scss */
 #pageend .left .social-media, #pageend .right .social-media {
   list-style: none;
   padding: 0;
 }
-/* line 282, ../../src/sass/_portfolio.scss */
+/* line 354, ../../src/sass/_portfolio.scss */
 #pageend .left .social-media li, #pageend .right .social-media li {
   margin-right: .5em;
   border-radius: 3px;
   float: left;
 }
-/* line 286, ../../src/sass/_portfolio.scss */
+/* line 358, ../../src/sass/_portfolio.scss */
 #pageend .left .social-media li a, #pageend .right .social-media li a {
   display: block;
   padding: 0;
 }
-/* line 292, ../../src/sass/_portfolio.scss */
+/* line 364, ../../src/sass/_portfolio.scss */
 #pageend .left .social-media .linkedin a, #pageend .right .social-media .linkedin a {
   width: 30px;
   height: 30px;
   background: url(../img/social.png) no-repeat;
   border: none;
 }
-/* line 302, ../../src/sass/_portfolio.scss */
+/* line 374, ../../src/sass/_portfolio.scss */
 #pageend .left .social-media .github a, #pageend .right .social-media .github a {
   width: 30px;
   height: 30px;
@@ -601,7 +759,7 @@ a.rslides_nav:hover {
     transform: scale(1.2);
   }
 }
-/* line 344, ../../src/sass/_portfolio.scss */
+/* line 416, ../../src/sass/_portfolio.scss */
 #pageend .left .social-media .linkedin:hover, #pageend .left .social-media .github:hover, #pageend .right .social-media .linkedin:hover, #pageend .right .social-media .github:hover {
   -webkit-animation: enlarge 2s infinite alternate;
   -moz-animation: enlarge 2s infinite alternate;
@@ -610,65 +768,65 @@ a.rslides_nav:hover {
 }
 
 @media screen and (min-width: 500px) {
-  /* line 355, ../../src/sass/_portfolio.scss */
+  /* line 427, ../../src/sass/_portfolio.scss */
   #pageend a {
     width: 30%;
   }
-  /* line 358, ../../src/sass/_portfolio.scss */
+  /* line 430, ../../src/sass/_portfolio.scss */
   #pageend p {
     width: 60%;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 365, ../../src/sass/_portfolio.scss */
+  /* line 437, ../../src/sass/_portfolio.scss */
   #developer #skills1, #developer #skills2, #designer #skills1, #designer #skills2 {
     width: 50%;
   }
-  /* line 368, ../../src/sass/_portfolio.scss */
+  /* line 440, ../../src/sass/_portfolio.scss */
   #developer #projects1, #developer #projects2, #designer #projects1, #designer #projects2 {
     width: 50%;
   }
-  /* line 371, ../../src/sass/_portfolio.scss */
+  /* line 443, ../../src/sass/_portfolio.scss */
   #developer #projects1 .rslides li, #developer #projects2 .rslides li, #designer #projects1 .rslides li, #designer #projects2 .rslides li {
     height: 60vh;
   }
-  /* line 375, ../../src/sass/_portfolio.scss */
+  /* line 447, ../../src/sass/_portfolio.scss */
   #developer #projects1 .rslides .title p, #developer #projects2 .rslides .title p, #designer #projects1 .rslides .title p, #designer #projects2 .rslides .title p {
     font-size: 20px;
   }
 
-  /* line 382, ../../src/sass/_portfolio.scss */
+  /* line 454, ../../src/sass/_portfolio.scss */
   #designer {
     height: 65vh;
   }
-  /* line 384, ../../src/sass/_portfolio.scss */
+  /* line 456, ../../src/sass/_portfolio.scss */
   #designer #skills2 {
     width: 50%;
     order: 2;
   }
-  /* line 388, ../../src/sass/_portfolio.scss */
+  /* line 460, ../../src/sass/_portfolio.scss */
   #designer #projects2 {
     order: 1;
     width: 50%;
   }
 
-  /* line 393, ../../src/sass/_portfolio.scss */
+  /* line 465, ../../src/sass/_portfolio.scss */
   #pageend {
     flex-direction: row;
     justify-content: space-between;
   }
-  /* line 396, ../../src/sass/_portfolio.scss */
+  /* line 468, ../../src/sass/_portfolio.scss */
   #pageend .left, #pageend .right {
     width: 50%;
     align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 408, ../../src/sass/_portfolio.scss */
+  /* line 480, ../../src/sass/_portfolio.scss */
   #developer #projects1 .rslides-container .rslides li .lg, #developer #projects2 .rslides-container .rslides li .lg, #designer #projects1 .rslides-container .rslides li .lg, #designer #projects2 .rslides-container .rslides li .lg {
     width: 500px;
   }
-  /* line 411, ../../src/sass/_portfolio.scss */
+  /* line 483, ../../src/sass/_portfolio.scss */
   #developer #projects1 .rslides-container .rslides li .md, #developer #projects2 .rslides-container .rslides li .md, #designer #projects1 .rslides-container .rslides li .md, #designer #projects2 .rslides-container .rslides li .md {
     width: 300px;
   }

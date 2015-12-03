@@ -224,10 +224,46 @@ a.rslides_nav:hover {
   		padding:0.8em 1.2em;
   		letter-spacing:0.8px;
   	}
+  	  	@-webkit-keyframes enlarge {
+  	from {
+    	transform: scale(1);
+  		}
+  	to {
+    	transform: scale(1.5);
+  		}
+	}
+	@-moz-keyframes enlarge {
+	  from {
+	    transform: scale(1);
+	  }
+	  to {
+	    transform: scale(1.5);
+	  }
+	}				
+	@-o-keyframes enlarge {
+	  from {
+	    transform: scale(1);
+	  }
+	  to {
+	    transform: scale(1.5);
+	  }
+	}				
+	@keyframes enlarge {
+	  from {
+	    transform: scale(1);
+	  }
+	  to {
+	    transform: scale(1.5);
+	  }
+	}
   	a:hover {
   		color:white;
   		background:$purple;
   		border:2px solid $purple;
+  		-webkit-animation: enlarge 2s infinite alternate;
+		-moz-animation: enlarge 2s infinite alternate;
+		-o-animation: enlarge 2s infinite alternate;
+		animation: enlarge 2s infinite alternate;
   	}
 }
 #pageend {
@@ -252,10 +288,46 @@ a.rslides_nav:hover {
 		font-size:18px;
 		letter-spacing:0.8px;
 	}
+	@-webkit-keyframes enlarge {
+  	from {
+    	transform: scale(1);
+  		}
+  	to {
+    	transform: scale(1.5);
+  		}
+	}
+	@-moz-keyframes enlarge {
+	  from {
+	    transform: scale(1);
+	  }
+	  to {
+	    transform: scale(1.5);
+	  }
+	}				
+	@-o-keyframes enlarge {
+	  from {
+	    transform: scale(1);
+	  }
+	  to {
+	    transform: scale(1.5);
+	  }
+	}				
+	@keyframes enlarge {
+	  from {
+	    transform: scale(1);
+	  }
+	  to {
+	    transform: scale(1.5);
+	  }
+	}
 	a:hover {
 		color:$purple;
 		background:white;
 		border:2px solid white;
+		-webkit-animation: enlarge 2s infinite alternate;
+		-moz-animation: enlarge 2s infinite alternate;
+		-o-animation: enlarge 2s infinite alternate;
+		animation: enlarge 2s infinite alternate;
 	}
 	p {
 		font-size:18px;
